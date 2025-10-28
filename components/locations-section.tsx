@@ -28,7 +28,7 @@ export function LocationsSection() {
   ]
 
   return (
-    <section className="py-20 bg-background">
+    <section id="ubicaciones" className="py-20 bg-background">
       <div className="container px-4 mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}

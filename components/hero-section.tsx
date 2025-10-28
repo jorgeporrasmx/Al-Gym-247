@@ -10,7 +10,7 @@ export function HeroSection() {
   const { t, language } = useLanguage()
 
   return (
-    <section className="relative py-8 md:py-12 px-4 md:px-8 overflow-hidden" style={{
+    <section className="relative py-4 md:py-6 px-4 md:px-8 overflow-hidden" style={{
       background: `
         radial-gradient(circle at 1px 1px, rgba(0,0,0,0.1) 1px, transparent 0),
         white
@@ -23,7 +23,7 @@ export function HeroSection() {
           <div className="space-y-6">
             {/* Main Heading */}
             <div className="animate-fade-in-up">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight transition-all duration-500 hover:scale-105">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight transition-all duration-500 hover:scale-105">
                 {t("heroTitle")
                   .split(" ")
                   .map((word, index) => (

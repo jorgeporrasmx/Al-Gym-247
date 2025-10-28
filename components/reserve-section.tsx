@@ -8,7 +8,7 @@ export function ReserveSection() {
   const { t, language } = useLanguage()
 
   return (
-    <section className="relative py-20 px-4 md:px-8 overflow-hidden" style={{
+    <section id="contacto" className="relative py-20 px-4 md:px-8 overflow-hidden" style={{
       background: `
         radial-gradient(circle at 1px 1px, rgba(0,0,0,0.1) 1px, transparent 0),
         white
