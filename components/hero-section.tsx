@@ -10,7 +10,7 @@ export function HeroSection() {
   const { t, language } = useLanguage()
 
   return (
-    <section className="relative py-4 md:py-6 px-4 md:px-8 overflow-hidden" style={{
+    <section className="relative py-2 md:py-4 px-4 md:px-8 overflow-hidden" style={{
       background: `
         radial-gradient(circle at 1px 1px, rgba(0,0,0,0.1) 1px, transparent 0),
         white
@@ -18,12 +18,12 @@ export function HeroSection() {
       backgroundSize: '20px 20px'
     }}>
       <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-10 items-center">
+        <div className="grid lg:grid-cols-2 gap-4 md:gap-6 lg:gap-8 items-center">
           {/* Left Content */}
-          <div className="space-y-6">
+          <div className="space-y-3 md:space-y-4">
             {/* Main Heading */}
             <div className="animate-fade-in-up">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight transition-all duration-500 hover:scale-105">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight transition-all duration-500 hover:scale-105">
                 {t("heroTitle")
                   .split(" ")
                   .map((word, index) => (
@@ -32,19 +32,19 @@ export function HeroSection() {
                     </span>
                   ))}
               </h1>
-              <p className="text-lg md:text-xl mt-4 font-bold animate-fade-in-up animation-delay-200" style={{ color: '#FD3502' }}>
+              <p className="text-base md:text-lg mt-2 md:mt-3 font-bold animate-fade-in-up animation-delay-200" style={{ color: '#FD3502' }}>
                 {t("heroSubtitle")}
               </p>
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up animation-delay-400">
+            <div className="flex flex-col sm:flex-row gap-3 animate-fade-in-up animation-delay-400">
               <Button
-                className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg flex items-center gap-2 font-bold transition-colors duration-200"
+                className="bg-green-600 hover:bg-green-700 text-white px-4 md:px-6 py-2 md:py-3 rounded-lg flex items-center justify-center gap-2 font-bold transition-colors duration-200 text-sm md:text-base"
                 onClick={() => window.open(getWhatsAppURL(undefined, language), "_blank")}
               >
                 <svg
-                  className="w-5 h-5"
+                  className="w-4 h-4 md:w-5 md:h-5"
                   viewBox="0 0 24 24"
                   fill="currentColor"
                 >
@@ -53,7 +53,7 @@ export function HeroSection() {
                 {t("whatsapp")}
               </Button>
               <Button
-                className="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-lg font-bold transition-colors duration-200"
+                className="bg-primary hover:bg-primary/90 text-white px-4 md:px-6 py-2 md:py-3 rounded-lg font-bold transition-colors duration-200 text-sm md:text-base"
                 onClick={() => window.open(CONTACTS.forms.interest, "_blank")}
               >
                 {t("interested")}
@@ -61,28 +61,28 @@ export function HeroSection() {
             </div>
 
             {/* Rating and Categories */}
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 animate-fade-in-up animation-delay-600">
-              <div className="flex items-center gap-2">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 animate-fade-in-up animation-delay-600">
+              <div className="flex items-center gap-1">
                 {[...Array(5)].map((_, i) => (
                   <Star
                     key={i}
-                    className="w-5 h-5 fill-yellow-400 text-yellow-400 transition-transform duration-300 hover:scale-125"
+                    className="w-4 h-4 md:w-5 md:h-5 fill-yellow-400 text-yellow-400 transition-transform duration-300 hover:scale-125"
                     style={{ animationDelay: `${i * 100}ms` }}
                   />
                 ))}
               </div>
-              <div className="text-gray-600 text-sm">{t("categories")}</div>
+              <div className="text-gray-600 text-xs md:text-sm">{t("categories")}</div>
             </div>
 
-            {/* Testimonial */}
-            <div className="bg-white p-6 rounded-lg shadow-sm animate-fade-in-up animation-delay-800 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] transform-gpu">
-              <blockquote className="text-gray-700 text-sm leading-relaxed mb-4">&ldquo;{t("testimonialText")}&rdquo;</blockquote>
+            {/* Testimonial - Hidden on mobile */}
+            <div className="hidden md:block bg-white p-4 lg:p-6 rounded-lg shadow-sm animate-fade-in-up animation-delay-800 transition-all duration-300 hover:shadow-lg hover:scale-[1.02] transform-gpu">
+              <blockquote className="text-gray-700 text-xs lg:text-sm leading-relaxed mb-3">&ldquo;{t("testimonialText")}&rdquo;</blockquote>
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center transition-transform duration-300 hover:scale-110">
-                  <span className="text-gray-600 text-sm font-medium">JA</span>
+                <div className="w-8 h-8 lg:w-10 lg:h-10 bg-gray-300 rounded-full flex items-center justify-center transition-transform duration-300 hover:scale-110">
+                  <span className="text-gray-600 text-xs lg:text-sm font-medium">JA</span>
                 </div>
                 <div>
-                  <div className="font-medium text-gray-900 text-sm">{t("testimonialAuthor")}</div>
+                  <div className="font-medium text-gray-900 text-xs lg:text-sm">{t("testimonialAuthor")}</div>
                 </div>
               </div>
             </div>
