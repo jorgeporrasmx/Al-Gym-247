@@ -15,11 +15,11 @@ export function SchemaOrg() {
         "https://al-gym-247.vercel.app/pic1.jpg",
         "https://al-gym-247.vercel.app/pic2.jpg"
       ],
-      "description": "Gimnasio 24 horas en Azcapotzalco, CDMX con equipos modernos de última generación, clases grupales incluidas (Spinning, Yoga, Crossfit) y acceso ilimitado. Primera clase gratis.",
+      "description": "Gimnasio 24 horas en Azcapotzalco, CDMX con equipos modernos de última generación, clases grupales incluidas (Boxeo, Spinning, Bouncing, Funcional) y acceso ilimitado. Primera clase gratis.",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Calle Principal 123",
-        "addressLocality": "Azcapotzalco",
+        "streetAddress": "Av. Azcapotzalco 527. Local 15 al 17",
+        "addressLocality": "Centro de Azcapotzalco",
         "addressRegion": "CDMX",
         "postalCode": "02000",
         "addressCountry": "MX"
@@ -74,7 +74,7 @@ export function SchemaOrg() {
         },
         {
           "@type": "LocationFeatureSpecification",
-          "name": "Clases grupales (Spinning, Yoga, Crossfit)",
+          "name": "Clases grupales (Boxeo, Spinning, Bouncing, Funcional)",
           "value": true
         },
         {
@@ -104,7 +104,7 @@ export function SchemaOrg() {
         },
         {
           "@type": "LocationFeatureSpecification",
-          "name": "Acceso con huella digital",
+          "name": "Acceso con Tarjeta Llave personal",
           "value": true
         }
       ],
@@ -241,21 +241,52 @@ export function SchemaOrg() {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Algym247",
+    "alternateName": "Al Gym 247",
     "url": "https://al-gym-247.vercel.app",
-    "logo": "https://al-gym-247.vercel.app/logo.png",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://al-gym-247.vercel.app/logo.png",
+      "width": 250,
+      "height": 60
+    },
     "description": "Cadena de gimnasios 24 horas en Ciudad de México con equipos modernos y clases incluidas.",
+    "foundingDate": "2020",
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+52-55-1234-5678",
       "contactType": "customer service",
       "areaServed": "MX",
-      "availableLanguage": ["Spanish", "English"]
+      "availableLanguage": ["Spanish", "English"],
+      "email": "contacto@algym247.com"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Ciudad de México",
+      "addressRegion": "CDMX",
+      "addressCountry": "MX"
     },
     "sameAs": [
       "https://www.facebook.com/algym247",
       "https://www.instagram.com/algym247",
-      "https://twitter.com/algym247"
+      "https://twitter.com/algym247",
+      "https://www.tiktok.com/@algym247",
+      "https://www.youtube.com/@algym247"
     ]
+  }
+
+  const website = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Algym247",
+    "url": "https://al-gym-247.vercel.app",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://al-gym-247.vercel.app/?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
   }
 
   return (
@@ -265,6 +296,14 @@ export function SchemaOrg() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(organization)
+        }}
+      />
+
+      {/* WebSite Schema with Search */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(website)
         }}
       />
 

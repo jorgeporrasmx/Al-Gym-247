@@ -43,7 +43,7 @@ interface LocationDetailProps {
 }
 
 export function LocationDetail({ location }: LocationDetailProps) {
-  const { language } = useLanguage()
+  const { language, t } = useLanguage()
 
   const handleWhatsAppClick = () => {
     const message = language === "es"
@@ -70,7 +70,7 @@ export function LocationDetail({ location }: LocationDetailProps) {
             <div className="space-y-6">
               <div className="inline-block">
                 <span className="bg-primary text-white px-4 py-2 rounded-full text-sm font-medium">
-                  Ubicación Premium
+                  {t("locationPremiumBadge")}
                 </span>
               </div>
 
@@ -118,16 +118,16 @@ export function LocationDetail({ location }: LocationDetailProps) {
                   onClick={handleWhatsAppClick}
                 >
                   <MessageCircle className="w-5 h-5 mr-2 transition-transform group-hover:scale-110" />
-                  Reserva por WhatsApp
+                  {t("locationReserveWhatsApp")}
                 </Button>
                 <Button
                   size="lg"
                   variant="outline"
-                  className="text-white border-white hover:bg-white/10"
+                  className="text-white border-white hover:bg-white hover:text-primary"
                   onClick={handleDirectionsClick}
                 >
                   <Navigation className="w-5 h-5 mr-2" />
-                  Cómo llegar
+                  {t("locationHowToGet")}
                 </Button>
               </div>
             </div>
@@ -152,7 +152,7 @@ export function LocationDetail({ location }: LocationDetailProps) {
       <section className="py-16 px-4 md:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            Instalaciones y Servicios
+            {t("locationFacilitiesTitle")}
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -175,7 +175,7 @@ export function LocationDetail({ location }: LocationDetailProps) {
           <div className="grid lg:grid-cols-2 gap-8">
             {/* Map */}
             <div>
-              <h2 className="text-2xl md:text-3xl font-bold mb-6">Ubicación en el Mapa</h2>
+              <h2 className="text-2xl md:text-3xl font-bold mb-6">{t("locationMapTitle")}</h2>
               <div className="aspect-video rounded-lg overflow-hidden shadow-lg">
                 <iframe
                   src={location.embedMapUrl}
@@ -193,13 +193,13 @@ export function LocationDetail({ location }: LocationDetailProps) {
                 onClick={handleDirectionsClick}
               >
                 <Navigation className="w-5 h-5 mr-2" />
-                Abrir en Google Maps
+                {t("locationOpenMap")}
               </Button>
             </div>
 
             {/* Nearby Landmarks */}
             <div>
-              <h2 className="text-2xl md:text-3xl font-bold mb-6">Referencias Cercanas</h2>
+              <h2 className="text-2xl md:text-3xl font-bold mb-6">{t("locationNearbyTitle")}</h2>
               <Card>
                 <CardContent className="p-6">
                   <ul className="space-y-4">
@@ -216,9 +216,9 @@ export function LocationDetail({ location }: LocationDetailProps) {
               {/* Contact Card */}
               <Card className="mt-6 bg-gradient-to-br from-primary/10 to-primary/5 border-primary/20">
                 <CardContent className="p-6 space-y-4">
-                  <h3 className="text-xl font-bold">¿Listo para empezar?</h3>
+                  <h3 className="text-xl font-bold">{t("locationReadyTitle")}</h3>
                   <p className="text-gray-600">
-                    Agenda tu clase de prueba gratuita y conoce nuestras instalaciones
+                    {t("locationReadyDescription")}
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3">
                     <Button
@@ -226,15 +226,16 @@ export function LocationDetail({ location }: LocationDetailProps) {
                       onClick={handleWhatsAppClick}
                     >
                       <MessageCircle className="w-4 h-4 mr-2" />
-                      WhatsApp
+                      {t("whatsapp")}
                     </Button>
                     <Button
                       variant="outline"
                       className="flex-1"
                       onClick={handleCallClick}
+                      title="Llamar ahora"
                     >
                       <Phone className="w-4 h-4 mr-2" />
-                      Llamar
+                      {t("call")}
                     </Button>
                   </div>
                 </CardContent>
@@ -248,7 +249,7 @@ export function LocationDetail({ location }: LocationDetailProps) {
       <section className="py-16 px-4 md:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            Conoce Nuestras Instalaciones
+            {t("locationGalleryTitle")}
           </h2>
 
           <div className="grid md:grid-cols-3 gap-6">
@@ -276,7 +277,7 @@ export function LocationDetail({ location }: LocationDetailProps) {
       <section className="py-16 px-4 md:px-8 bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            Lo que dicen nuestros miembros
+            {t("locationTestimonialsTitle")}
           </h2>
 
           <Card className="bg-white">
@@ -311,10 +312,10 @@ export function LocationDetail({ location }: LocationDetailProps) {
       <section className="py-16 px-4 md:px-8 bg-gradient-to-br from-primary to-primary/90 text-white">
         <div className="max-w-4xl mx-auto text-center space-y-6">
           <h2 className="text-3xl md:text-4xl font-bold">
-            Visítanos en {location.neighborhood}
+            {t("locationVisitUs")} {location.neighborhood}
           </h2>
           <p className="text-xl text-white/90">
-            Primera clase completamente gratis. Sin compromisos.
+            {t("locationFirstClassFree")}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
             <Button
@@ -323,16 +324,16 @@ export function LocationDetail({ location }: LocationDetailProps) {
               onClick={handleWhatsAppClick}
             >
               <MessageCircle className="w-5 h-5 mr-2" />
-              Reservar ahora
+              {t("locationReserveNow")}
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="text-white border-white hover:bg-white/10"
+              className="text-white border-white hover:bg-white hover:text-primary"
               onClick={handleDirectionsClick}
             >
               <Navigation className="w-5 h-5 mr-2" />
-              Ver en mapa
+              {t("locationViewMap")}
             </Button>
           </div>
 
@@ -341,7 +342,7 @@ export function LocationDetail({ location }: LocationDetailProps) {
               href="/#ubicaciones"
               className="text-white/90 hover:text-white underline transition-colors"
             >
-              ← Ver todas las ubicaciones
+              ← {t("locationAllLocations")}
             </a>
           </div>
         </div>

@@ -125,6 +125,24 @@ export const translations = {
     franchiseInvestmentOpportunity: "Oportunidad de Inversión",
     franchiseRequestInfo: "Solicita Información",
     franchiseViewBenefits: "Ver Beneficios",
+
+    // Location Detail Page
+    locationPremiumBadge: "Ubicación Premium",
+    locationFacilitiesTitle: "Instalaciones y Servicios",
+    locationMapTitle: "Ubicación en el Mapa",
+    locationNearbyTitle: "Referencias Cercanas",
+    locationReadyTitle: "¿Listo para empezar?",
+    locationReadyDescription: "Agenda tu clase de prueba gratuita y conoce nuestras instalaciones",
+    locationReserveWhatsApp: "Reserva por WhatsApp",
+    locationHowToGet: "Cómo llegar",
+    locationOpenMap: "Abrir en Google Maps",
+    locationGalleryTitle: "Conoce Nuestras Instalaciones",
+    locationTestimonialsTitle: "Lo que dicen nuestros miembros",
+    locationVisitUs: "Visítanos en",
+    locationFirstClassFree: "Primera clase completamente gratis. Sin compromisos.",
+    locationReserveNow: "Reservar ahora",
+    locationViewMap: "Ver en mapa",
+    locationAllLocations: "Ver todas las ubicaciones",
   },
   en: {
     // Header
@@ -246,6 +264,24 @@ export const translations = {
     franchiseInvestmentOpportunity: "Investment Opportunity",
     franchiseRequestInfo: "Request Information",
     franchiseViewBenefits: "View Benefits",
+
+    // Location Detail Page
+    locationPremiumBadge: "Premium Location",
+    locationFacilitiesTitle: "Facilities and Services",
+    locationMapTitle: "Location on Map",
+    locationNearbyTitle: "Nearby References",
+    locationReadyTitle: "Ready to start?",
+    locationReadyDescription: "Schedule your free trial class and visit our facilities",
+    locationReserveWhatsApp: "Reserve via WhatsApp",
+    locationHowToGet: "Get directions",
+    locationOpenMap: "Open in Google Maps",
+    locationGalleryTitle: "Discover Our Facilities",
+    locationTestimonialsTitle: "What our members say",
+    locationVisitUs: "Visit us in",
+    locationFirstClassFree: "First class completely free. No commitments.",
+    locationReserveNow: "Reserve now",
+    locationViewMap: "View on map",
+    locationAllLocations: "View all locations",
   },
 }
 

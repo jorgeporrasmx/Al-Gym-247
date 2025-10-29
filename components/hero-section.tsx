@@ -99,7 +99,7 @@ export function HeroSection() {
                 loop
                 playsInline
                 controls
-                poster="/video-poster.jpg"
+                poster="/pic1.jpg"
               >
                 <source
                   src="/Conoce-Al-Gym.mp4"

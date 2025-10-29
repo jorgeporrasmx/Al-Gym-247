@@ -17,12 +17,20 @@ export const metadata: Metadata = {
     "fitness polanco",
     "gimnasio premium polanco",
     "nuevo polanco gym",
+    "gimnasio antara polanco",
+    "gym plaza carso",
+    "gimnasio ejército nacional",
+    "spa gimnasio polanco",
+    "pilates boxing polanco",
   ],
+  authors: [{ name: "Algym247" }],
+  creator: "Algym247",
+  publisher: "Algym247",
   openGraph: {
     title: "Algym247 Polanco - Gimnasio Premium 24/7 en CDMX",
     description:
       "Gimnasio premium 24 horas en Nuevo Polanco con tecnología de punta, spa y clases exclusivas. ¡Prueba gratis!",
-    type: "business.business",
+    type: "website",
     locale: "es_MX",
     url: "https://al-gym-247.vercel.app/ubicaciones/polanco",
     siteName: "Algym247",
@@ -38,17 +46,18 @@ export const metadata: Metadata = {
   },
 }
 
+// TODO: Update with real location data before production (see PLACEHOLDERS-TODO.md)
 const locationData = {
   name: "Algym247 Nuevo Polanco",
-  address: "Av. Ejército Nacional 843, Nuevo Polanco, Miguel Hidalgo, CDMX, CP 11510",
+  address: "Av. Ejército Nacional 843, Nuevo Polanco, Miguel Hidalgo, CDMX, CP 11510", // TODO: Verify address
   neighborhood: "Nuevo Polanco",
-  phone: "+52 55 8765 4321",
-  whatsapp: "+52 55 8765 4321",
-  email: "polanco@algym247.com",
+  phone: "+52 55 8765 4321", // TODO: Real phone number
+  whatsapp: "+52 55 8765 4321", // TODO: Real WhatsApp number
+  email: "polanco@algym247.com", // TODO: Verify email works
   hours: "24 horas, 7 días a la semana",
   coordinates: {
-    lat: 19.44,
-    lng: -99.2019,
+    lat: 19.44, // TODO: Verify real GPS coordinates
+    lng: -99.2019, // TODO: Verify real GPS coordinates
   },
   mapUrl: "https://maps.google.com/?q=19.4400,-99.2019",
   embedMapUrl:
@@ -76,15 +85,87 @@ const locationData = {
     "Zona corporativa y residencial premium",
   ],
   testimonial: {
-    name: "Carlos Mendoza",
-    text: "El mejor gimnasio donde he estado. Las instalaciones son de primer nivel, el equipo es nuevo y las clases de boxing son increíbles. Vale cada peso de la membresía.",
+    name: "Carlos Mendoza", // TODO: Replace with real testimonial
+    text: "El mejor gimnasio donde he estado. Las instalaciones son de primer nivel, el equipo es nuevo y las clases de boxing son increíbles. Vale cada peso de la membresía.", // TODO: Real testimonial
     rating: 5,
   },
 }
 
 export default function PolancoPage() {
+  // Breadcrumb Schema for better navigation in search results
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://al-gym-247.vercel.app"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Ubicaciones",
+        "item": "https://al-gym-247.vercel.app/#ubicaciones"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Polanco",
+        "item": "https://al-gym-247.vercel.app/ubicaciones/polanco"
+      }
+    ]
+  }
+
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "GymHealthClub",
+    "@id": "https://al-gym-247.vercel.app/ubicaciones/polanco",
+    "name": "Algym247 Nuevo Polanco",
+    "image": [
+      "https://al-gym-247.vercel.app/pic2.jpg",
+      "https://al-gym-247.vercel.app/3.jpg",
+      "https://al-gym-247.vercel.app/pic1.jpg"
+    ],
+    "description": "Gimnasio premium 24 horas en Nuevo Polanco, CDMX. Instalaciones de lujo con equipamiento Technogym, spa, clases exclusivas (Pilates, Boxing, TRX, Hot Yoga) y servicios VIP. Primera clase gratis.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Ejército Nacional 843",
+      "addressLocality": "Nuevo Polanco, Miguel Hidalgo",
+      "addressRegion": "CDMX",
+      "postalCode": "11510",
+      "addressCountry": "MX"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "19.4400",
+      "longitude": "-99.2019"
+    },
+    "url": "https://al-gym-247.vercel.app/ubicaciones/polanco",
+    "telephone": "+52-55-8765-4321",
+    "email": "polanco@algym247.com",
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      "opens": "00:00",
+      "closes": "23:59"
+    },
+    "priceRange": "$$$",
+    "paymentAccepted": "Cash, Credit Card, Debit Card, Mobile Payment, Bank Transfer",
+    "currenciesAccepted": "MXN"
+  }
+
   return (
     <div className="min-h-screen flex flex-col">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Header />
       <main className="flex-1">
         <LocationDetail location={locationData} />

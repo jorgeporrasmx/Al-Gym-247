@@ -1,6 +1,9 @@
 /**
  * Centralized location data for NAP (Name, Address, Phone) consistency
  * Used across the entire site for local SEO optimization
+ *
+ * TODO: Update with real data before production (see PLACEHOLDERS-TODO.md)
+ * IMPORTANT: NAP consistency is critical for local SEO
  */
 
 export interface Location {
@@ -38,16 +41,16 @@ export const LOCATIONS: Record<string, Location> = {
     name: "Azcapotzalco",
     fullName: "Algym247 Azcapotzalco",
     address: {
-      street: "Calle Principal 123",
-      neighborhood: "Azcapotzalco",
+      street: "Av. Azcapotzalco 527. Local 15 al 17",
+      neighborhood: "Centro de Azcapotzalco",
       municipality: "Azcapotzalco",
       state: "CDMX",
       postalCode: "02000",
       country: "México",
-      full: "Calle Principal 123, Azcapotzalco, CDMX, CP 02000",
+      full: "Av. Azcapotzalco 527. Local 15 al 17, Centro de Azcapotzalco, 02000 CDMX",
     },
     phone: "+52 55 1234 5678",
-    whatsapp: "+5255123456 78",
+    whatsapp: "+525512345678",
     email: "azcapotzalco@algym247.com",
     coordinates: {
       lat: 19.4569,
@@ -92,6 +95,7 @@ export const LOCATIONS: Record<string, Location> = {
 }
 
 // Company information for NAP consistency
+// TODO: Verify all contact info and social media URLs before production
 export const COMPANY_INFO = {
   name: "Algym247",
   legalName: "Algym247 S.A. de C.V.",
@@ -99,16 +103,16 @@ export const COMPANY_INFO = {
   description:
     "Cadena de gimnasios 24 horas en Ciudad de México. Equipamiento moderno, clases incluidas y acceso ilimitado.",
   founded: "2020",
-  email: "contacto@algym247.com",
-  phone: "+52 55 1234 5678", // Main contact number
+  email: "contacto@algym247.com", // TODO: Verify email
+  phone: "+52 55 1234 5678", // TODO: Real main contact number
   website: "https://al-gym-247.vercel.app",
   social: {
-    facebook: "https://www.facebook.com/algym247",
-    instagram: "https://www.instagram.com/algym247",
-    twitter: "https://twitter.com/algym247",
-    tiktok: "https://www.tiktok.com/@algym247",
-    youtube: "https://www.youtube.com/@algym247",
-    linkedin: "https://www.linkedin.com/company/algym247",
+    facebook: "https://www.facebook.com/algym247", // TODO: Verify URL
+    instagram: "https://www.instagram.com/algym247", // TODO: Verify URL
+    twitter: "https://twitter.com/algym247", // TODO: Verify URL
+    tiktok: "https://www.tiktok.com/@algym247", // TODO: Verify URL
+    youtube: "https://www.youtube.com/@algym247", // TODO: Verify URL
+    linkedin: "https://www.linkedin.com/company/algym247", // TODO: Verify URL
   },
 }
 
