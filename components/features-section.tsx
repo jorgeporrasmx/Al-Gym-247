@@ -15,6 +15,7 @@ export function FeaturesSection() {
       title: t("feature1Title"),
       description: t("feature1Description"),
       image: "/pic1.jpg",
+      altText: "Equipos modernos de gimnasio en Algym247 CDMX - Máquinas de última generación",
     },
     {
       icon: (
@@ -23,6 +24,7 @@ export function FeaturesSection() {
       title: t("feature2Title"),
       description: t("feature2Description"),
       image: "/pic2.jpg",
+      altText: "Clases grupales incluidas en Algym247 - Spinning, Yoga y Crossfit en CDMX",
     },
     {
       icon: (
@@ -31,6 +33,7 @@ export function FeaturesSection() {
       title: t("feature3Title"),
       description: t("feature3Description"),
       image: "/3.jpg",
+      altText: "Gimnasio 24 horas CDMX - Acceso ilimitado Algym247 Azcapotzalco y Polanco",
     },
   ]
 
@@ -60,7 +63,7 @@ export function FeaturesSection() {
                 <div className="aspect-video relative overflow-hidden rounded-lg shadow-lg transition-all duration-500 hover:shadow-2xl hover:scale-[1.02] transform-gpu">
                   <Image
                     src={feature.image || "/placeholder.svg"}
-                    alt={`${feature.title} - Instalaciones de Algym247`}
+                    alt={feature.altText}
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -82,6 +85,14 @@ export function FeaturesSection() {
                 <p className="text-lg text-muted-foreground leading-relaxed transition-all duration-300 group-hover:text-foreground">
                   {feature.description}
                 </p>
+                {index === 2 && (
+                  <a
+                    href="#ubicaciones"
+                    className="inline-flex items-center text-primary hover:text-primary/80 font-semibold transition-colors duration-200"
+                  >
+                    Ver nuestras ubicaciones →
+                  </a>
+                )}
               </div>
             </div>
           ))}

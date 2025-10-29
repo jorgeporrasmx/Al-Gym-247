@@ -57,6 +57,19 @@ export function FranchiseBenefits() {
           </p>
         </div>
 
+        {/* Quick Link to Locations */}
+        <div className="text-center mb-12">
+          <p className="text-gray-600 mb-3">
+            ¿Quieres conocer nuestras instalaciones antes de invertir?
+          </p>
+          <a
+            href="/#ubicaciones"
+            className="inline-flex items-center text-primary hover:text-primary/80 font-semibold text-lg transition-colors duration-200"
+          >
+            Visita nuestros gimnasios →
+          </a>
+        </div>
+
         {/* Benefits Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {benefits.map((benefit, index) => {

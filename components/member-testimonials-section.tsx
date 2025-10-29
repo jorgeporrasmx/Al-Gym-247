@@ -45,6 +45,19 @@ export function MemberTestimonialsSection() {
               ))}
             </div>
           </div>
+
+          {/* CTA to join */}
+          <div className="text-center mt-8">
+            <p className="text-gray-600 mb-4">
+              ¿Listo para comenzar tu transformación?
+            </p>
+            <a
+              href="#contacto"
+              className="inline-flex items-center text-primary hover:text-primary/80 font-semibold text-lg transition-colors duration-200"
+            >
+              Reserva tu clase gratis →
+            </a>
+          </div>
         </div>
       </div>
     </section>

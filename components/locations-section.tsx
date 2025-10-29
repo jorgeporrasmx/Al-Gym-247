@@ -104,7 +104,7 @@ export function LocationsSection() {
           <div className="relative animate-fade-in-right h-[500px]">
             <Image
               src="/pic3.jpg"
-              alt="Persona entrenando en Algym247 - Ubicaciones en CDMX"
+              alt="Gimnasio Algym247 en CDMX - Ubicaciones Azcapotzalco y Nuevo Polanco con equipos modernos"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover rounded-lg shadow-lg transition-all duration-500 hover:shadow-2xl hover:scale-[1.02] transform-gpu"

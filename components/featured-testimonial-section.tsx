@@ -19,6 +19,7 @@ export function FeaturedTestimonialSection() {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
+          <h2 className="sr-only">Testimonios destacados de miembros de Algym247</h2>
           <blockquote className="text-white text-2xl md:text-3xl lg:text-4xl font-light leading-relaxed mb-8">
             &ldquo;{t("featuredTestimonialQuote")}&rdquo;
           </blockquote>

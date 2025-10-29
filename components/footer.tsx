@@ -12,7 +12,7 @@ export function Footer() {
   return (
     <footer className="bg-gray-100 py-16">
       <div className="container mx-auto px-4 text-center">
-        <h3 className="text-gray-600 text-lg mb-8">{t("followUs")}</h3>
+        <p className="text-gray-600 text-lg font-semibold mb-8">{t("followUs")}</p>
 
         <div className="flex justify-center gap-8 mb-8">
           <a href="#" className="text-gray-600 hover:text-gray-800 transition-colors duration-200">
