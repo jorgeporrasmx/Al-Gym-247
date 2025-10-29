@@ -16,13 +16,13 @@ export function Header() {
       <div className="container flex h-14 md:h-16 items-center justify-between px-3 md:px-4 gap-2 md:gap-4">
         {/* Logo */}
         <div className="flex items-center space-x-2 group flex-shrink-0">
-          <div className="relative h-20 w-28 md:h-24 md:w-36 lg:h-30 lg:w-40 mt-6 md:mt-8 lg:mt-10 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+          <div className="relative h-10 w-24 md:h-12 md:w-28 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
             <Image
               src="/logo.png"
-              alt="Algym247 - Tu gimnasio 24/7"
+              alt="Algym247 - Gimnasio 24/7 en CDMX | Azcapotzalco y Polanco"
               width={160}
               height={120}
-              className="transition-all duration-300 group-hover:scale-105"
+              className="object-contain transition-all duration-300 group-hover:scale-105"
               priority
               quality={95}
             />
