@@ -10,7 +10,7 @@ export function HeroSection() {
   const { t, language } = useLanguage()
 
   return (
-    <section className="relative py-2 md:py-4 px-4 md:px-8 overflow-hidden" style={{
+    <section className="relative py-0 md:py-2 px-4 md:px-8 overflow-hidden" style={{
       background: `
         radial-gradient(circle at 1px 1px, rgba(0,0,0,0.1) 1px, transparent 0),
         white
@@ -18,9 +18,9 @@ export function HeroSection() {
       backgroundSize: '20px 20px'
     }}>
       <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-4 md:gap-6 lg:gap-8 items-center">
+        <div className="grid lg:grid-cols-2 gap-2 md:gap-4 lg:gap-6 items-center">
           {/* Left Content */}
-          <div className="space-y-3 md:space-y-4">
+          <div className="space-y-2 md:space-y-3">
             {/* Main Heading */}
             <div className="animate-fade-in-up">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight transition-all duration-500 hover:scale-105">
