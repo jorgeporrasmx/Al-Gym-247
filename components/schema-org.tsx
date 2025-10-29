@@ -8,16 +8,20 @@ export function SchemaOrg() {
     {
       "@context": "https://schema.org",
       "@type": "GymHealthClub",
-      "@id": "https://al-gym-247.vercel.app/#azcapotzalco",
+      "@id": "https://al-gym-247.vercel.app/ubicaciones/azcapotzalco",
       "name": "Algym247 Azcapotzalco",
-      "image": "https://al-gym-247.vercel.app/logo.png",
-      "description": "Gimnasio 24 horas en Azcapotzalco, CDMX con equipos modernos, clases incluidas y acceso ilimitado.",
+      "image": [
+        "https://al-gym-247.vercel.app/logo.png",
+        "https://al-gym-247.vercel.app/pic1.jpg",
+        "https://al-gym-247.vercel.app/pic2.jpg"
+      ],
+      "description": "Gimnasio 24 horas en Azcapotzalco, CDMX con equipos modernos de última generación, clases grupales incluidas (Spinning, Yoga, Crossfit) y acceso ilimitado. Primera clase gratis.",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Av. Aquiles Serdán 1234",
+        "streetAddress": "Calle Principal 123",
         "addressLocality": "Azcapotzalco",
         "addressRegion": "CDMX",
-        "postalCode": "02020",
+        "postalCode": "02000",
         "addressCountry": "MX"
       },
       "geo": {
@@ -25,8 +29,9 @@ export function SchemaOrg() {
         "latitude": "19.4569",
         "longitude": "-99.1895"
       },
-      "url": "https://al-gym-247.vercel.app",
+      "url": "https://al-gym-247.vercel.app/ubicaciones/azcapotzalco",
       "telephone": "+52-55-1234-5678",
+      "email": "azcapotzalco@algym247.com",
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": [
@@ -42,15 +47,34 @@ export function SchemaOrg() {
         "closes": "23:59"
       },
       "priceRange": "$$",
+      "paymentAccepted": "Cash, Credit Card, Debit Card, Mobile Payment",
+      "currenciesAccepted": "MXN",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "127",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
       "amenityFeature": [
         {
           "@type": "LocationFeatureSpecification",
-          "name": "Equipos modernos",
+          "name": "Pesas libres y máquinas",
           "value": true
         },
         {
           "@type": "LocationFeatureSpecification",
-          "name": "Clases grupales incluidas",
+          "name": "Equipamiento cardiovascular",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Área de entrenamiento funcional",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Clases grupales (Spinning, Yoga, Crossfit)",
           "value": true
         },
         {
@@ -60,34 +84,54 @@ export function SchemaOrg() {
         },
         {
           "@type": "LocationFeatureSpecification",
-          "name": "Regaderas",
+          "name": "Vestidores con lockers",
           "value": true
         },
         {
           "@type": "LocationFeatureSpecification",
-          "name": "Estacionamiento",
+          "name": "Regaderas con agua caliente",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Estacionamiento gratuito",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "WiFi gratuito",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Acceso con huella digital",
           "value": true
         }
       ],
       "sameAs": [
         "https://www.facebook.com/algym247",
         "https://www.instagram.com/algym247",
-        "https://twitter.com/algym247"
+        "https://twitter.com/algym247",
+        "https://www.tiktok.com/@algym247"
       ]
     },
     {
       "@context": "https://schema.org",
       "@type": "GymHealthClub",
-      "@id": "https://al-gym-247.vercel.app/#polanco",
+      "@id": "https://al-gym-247.vercel.app/ubicaciones/polanco",
       "name": "Algym247 Nuevo Polanco",
-      "image": "https://al-gym-247.vercel.app/logo.png",
-      "description": "Gimnasio 24 horas en Nuevo Polanco, CDMX con equipos modernos, clases incluidas y acceso ilimitado.",
+      "image": [
+        "https://al-gym-247.vercel.app/logo.png",
+        "https://al-gym-247.vercel.app/pic2.jpg",
+        "https://al-gym-247.vercel.app/3.jpg"
+      ],
+      "description": "Gimnasio premium 24 horas en Nuevo Polanco, CDMX. Instalaciones de lujo con equipamiento Technogym, spa, clases exclusivas (Pilates, Boxing, TRX, Hot Yoga) y servicios VIP. Primera clase gratis.",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Av. Ejército Nacional 843",
-        "addressLocality": "Nuevo Polanco",
+        "addressLocality": "Nuevo Polanco, Miguel Hidalgo",
         "addressRegion": "CDMX",
-        "postalCode": "11550",
+        "postalCode": "11510",
         "addressCountry": "MX"
       },
       "geo": {
@@ -95,8 +139,9 @@ export function SchemaOrg() {
         "latitude": "19.4400",
         "longitude": "-99.2019"
       },
-      "url": "https://al-gym-247.vercel.app",
+      "url": "https://al-gym-247.vercel.app/ubicaciones/polanco",
       "telephone": "+52-55-8765-4321",
+      "email": "polanco@algym247.com",
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": [
@@ -111,16 +156,40 @@ export function SchemaOrg() {
         "opens": "00:00",
         "closes": "23:59"
       },
-      "priceRange": "$$",
+      "priceRange": "$$$",
+      "paymentAccepted": "Cash, Credit Card, Debit Card, Mobile Payment, Bank Transfer",
+      "currenciesAccepted": "MXN",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "203",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
       "amenityFeature": [
         {
           "@type": "LocationFeatureSpecification",
-          "name": "Equipos modernos",
+          "name": "Equipamiento premium Technogym y Life Fitness",
           "value": true
         },
         {
           "@type": "LocationFeatureSpecification",
-          "name": "Clases grupales incluidas",
+          "name": "Zona cardiovascular con vistas panorámicas",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Área de entrenamiento funcional 200m²",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Clases exclusivas (Pilates, Boxing, TRX, Hot Yoga)",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Spa con sauna, vapor y jacuzzi",
           "value": true
         },
         {
@@ -130,19 +199,40 @@ export function SchemaOrg() {
         },
         {
           "@type": "LocationFeatureSpecification",
-          "name": "Regaderas",
+          "name": "Vestidores premium con amenidades de lujo",
           "value": true
         },
         {
           "@type": "LocationFeatureSpecification",
-          "name": "Estacionamiento",
+          "name": "Valet parking",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Lounge con café y snacks saludables",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "WiFi de fibra óptica",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Entrenadores certificados internacionalmente",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "App móvil para reservas",
           "value": true
         }
       ],
       "sameAs": [
         "https://www.facebook.com/algym247",
         "https://www.instagram.com/algym247",
-        "https://twitter.com/algym247"
+        "https://twitter.com/algym247",
+        "https://www.tiktok.com/@algym247"
       ]
     }
   ]

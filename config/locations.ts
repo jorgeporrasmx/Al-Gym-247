@@ -1,0 +1,139 @@
+/**
+ * Centralized location data for NAP (Name, Address, Phone) consistency
+ * Used across the entire site for local SEO optimization
+ */
+
+export interface Location {
+  id: string
+  name: string
+  fullName: string
+  address: {
+    street: string
+    neighborhood: string
+    municipality: string
+    state: string
+    postalCode: string
+    country: string
+    full: string
+  }
+  phone: string
+  whatsapp: string
+  email: string
+  coordinates: {
+    lat: number
+    lng: number
+  }
+  hours: {
+    display: string
+    structured: {
+      opens: string
+      closes: string
+    }
+  }
+}
+
+export const LOCATIONS: Record<string, Location> = {
+  azcapotzalco: {
+    id: "azcapotzalco",
+    name: "Azcapotzalco",
+    fullName: "Algym247 Azcapotzalco",
+    address: {
+      street: "Calle Principal 123",
+      neighborhood: "Azcapotzalco",
+      municipality: "Azcapotzalco",
+      state: "CDMX",
+      postalCode: "02000",
+      country: "México",
+      full: "Calle Principal 123, Azcapotzalco, CDMX, CP 02000",
+    },
+    phone: "+52 55 1234 5678",
+    whatsapp: "+5255123456 78",
+    email: "azcapotzalco@algym247.com",
+    coordinates: {
+      lat: 19.4569,
+      lng: -99.1895,
+    },
+    hours: {
+      display: "24 horas, 7 días a la semana",
+      structured: {
+        opens: "00:00",
+        closes: "23:59",
+      },
+    },
+  },
+  polanco: {
+    id: "polanco",
+    name: "Polanco",
+    fullName: "Algym247 Nuevo Polanco",
+    address: {
+      street: "Av. Ejército Nacional 843",
+      neighborhood: "Nuevo Polanco",
+      municipality: "Miguel Hidalgo",
+      state: "CDMX",
+      postalCode: "11510",
+      country: "México",
+      full: "Av. Ejército Nacional 843, Nuevo Polanco, Miguel Hidalgo, CDMX, CP 11510",
+    },
+    phone: "+52 55 8765 4321",
+    whatsapp: "+525587654321",
+    email: "polanco@algym247.com",
+    coordinates: {
+      lat: 19.44,
+      lng: -99.2019,
+    },
+    hours: {
+      display: "24 horas, 7 días a la semana",
+      structured: {
+        opens: "00:00",
+        closes: "23:59",
+      },
+    },
+  },
+}
+
+// Company information for NAP consistency
+export const COMPANY_INFO = {
+  name: "Algym247",
+  legalName: "Algym247 S.A. de C.V.",
+  tagline: "El gimnasio para todos",
+  description:
+    "Cadena de gimnasios 24 horas en Ciudad de México. Equipamiento moderno, clases incluidas y acceso ilimitado.",
+  founded: "2020",
+  email: "contacto@algym247.com",
+  phone: "+52 55 1234 5678", // Main contact number
+  website: "https://al-gym-247.vercel.app",
+  social: {
+    facebook: "https://www.facebook.com/algym247",
+    instagram: "https://www.instagram.com/algym247",
+    twitter: "https://twitter.com/algym247",
+    tiktok: "https://www.tiktok.com/@algym247",
+    youtube: "https://www.youtube.com/@algym247",
+    linkedin: "https://www.linkedin.com/company/algym247",
+  },
+}
+
+// Helper function to get location by ID
+export function getLocation(locationId: string): Location | undefined {
+  return LOCATIONS[locationId]
+}
+
+// Helper function to get all locations as array
+export function getAllLocations(): Location[] {
+  return Object.values(LOCATIONS)
+}
+
+// Helper function to format phone for tel: links
+export function formatPhoneForLink(phone: string): string {
+  return phone.replace(/\s+/g, "")
+}
+
+// Helper function to get Google Maps URL
+export function getGoogleMapsUrl(location: Location): string {
+  return `https://maps.google.com/?q=${location.coordinates.lat},${location.coordinates.lng}`
+}
+
+// Helper function to get embedded map URL
+export function getEmbeddedMapUrl(location: Location): string {
+  const { lat, lng } = location.coordinates
+  return `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15045.234567890!2d${lng}!3d${lat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDI3JzI0LjgiTiA5OcKwMTEnMjIuMiJX!5e0!3m2!1ses!2smx!4v1234567890`
+}

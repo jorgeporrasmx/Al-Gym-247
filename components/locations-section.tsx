@@ -1,9 +1,10 @@
 "use client"
 
 import Image from "next/image"
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { MapPin, Phone, Clock } from "lucide-react"
+import { MapPin, Phone, Clock, ArrowRight } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
 import { getWhatsAppURL } from "@/config/contacts"
 
@@ -72,14 +73,29 @@ export function LocationsSection() {
                       </div>
                     </div>
 
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      className="mt-4 bg-transparent transition-all duration-300 hover:scale-105 hover:shadow-md hover-bg-brand-orange-light hover-border-brand-orange hover-brand-orange"
-                      onClick={() => window.open(location.mapUrl, "_blank")}
-                    >
-                      {t("viewOnMap")}
-                    </Button>
+                    <div className="flex gap-2 mt-4">
+                      <Link
+                        href={`/ubicaciones/${index === 0 ? 'azcapotzalco' : 'polanco'}`}
+                        className="flex-1"
+                      >
+                        <Button
+                          variant="default"
+                          size="sm"
+                          className="w-full bg-primary hover:bg-primary/90 transition-all duration-300 hover:scale-105"
+                        >
+                          Ver detalles
+                          <ArrowRight className="w-4 h-4 ml-2" />
+                        </Button>
+                      </Link>
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        className="flex-1 bg-transparent transition-all duration-300 hover:scale-105 hover:shadow-md hover-bg-brand-orange-light hover-border-brand-orange hover-brand-orange"
+                        onClick={() => window.open(location.mapUrl, "_blank")}
+                      >
+                        {t("viewOnMap")}
+                      </Button>
+                    </div>
                   </CardContent>
                 </Card>
               ))}
