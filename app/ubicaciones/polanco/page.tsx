@@ -49,11 +49,11 @@ export const metadata: Metadata = {
 // TODO: Update with real location data before production (see PLACEHOLDERS-TODO.md)
 const locationData = {
   name: "Algym247 Nuevo Polanco",
-  address: "Av. Ejército Nacional 843, Nuevo Polanco, Miguel Hidalgo, CDMX, CP 11510", // TODO: Verify address
-  neighborhood: "Nuevo Polanco",
-  phone: "+52 55 8765 4321", // TODO: Real phone number
-  whatsapp: "+52 55 8765 4321", // TODO: Real WhatsApp number
-  email: "polanco@algym247.com", // TODO: Verify email works
+  address: "Lago Alberto 442-Local 15, Anáhuac 1 Secc, Miguel Hidalgo, 11320 Ciudad de México, CDMX",
+  neighborhood: "Anáhuac 1 Secc",
+  phone: "+52 55 6811 3049",
+  whatsapp: "+52 55 6811 3049",
+  email: "informes@algymnuevopolanco.com.mx",
   hours: "24 horas, 7 días a la semana",
   coordinates: {
     lat: 19.44, // TODO: Verify real GPS coordinates
@@ -131,10 +131,10 @@ export default function PolancoPage() {
     "description": "Gimnasio premium 24 horas en Nuevo Polanco, CDMX. Instalaciones de lujo con equipamiento Technogym, spa, clases exclusivas (Pilates, Boxing, TRX, Hot Yoga) y servicios VIP. Primera clase gratis.",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Av. Ejército Nacional 843",
-      "addressLocality": "Nuevo Polanco, Miguel Hidalgo",
+      "streetAddress": "Lago Alberto 442-Local 15",
+      "addressLocality": "Anáhuac 1 Secc, Miguel Hidalgo",
       "addressRegion": "CDMX",
-      "postalCode": "11510",
+      "postalCode": "11320",
       "addressCountry": "MX"
     },
     "geo": {
@@ -143,8 +143,8 @@ export default function PolancoPage() {
       "longitude": "-99.2019"
     },
     "url": "https://al-gym-247.vercel.app/ubicaciones/polanco",
-    "telephone": "+52-55-8765-4321",
-    "email": "polanco@algym247.com",
+    "telephone": "+52-55-6811-3049",
+    "email": "informes@algymnuevopolanco.com.mx",
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],

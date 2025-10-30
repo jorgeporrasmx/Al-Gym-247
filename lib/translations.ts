@@ -40,8 +40,8 @@ export const translations = {
     location1Name: "Azcapotzalco",
     location1Address: "Av. Azcapotzalco 527. Local 15 al 17, Centro de Azcapotzalco, 02000 CDMX",
     location2Name: "Nuevo Polanco",
-    location2Address: "Av. Ejército Nacional 843, Nuevo Polanco, CDMX",
-    location2Phone: "Tel: (55) 8765-4321",
+    location2Address: "Lago Alberto 442-Local 15, Anáhuac 1 Secc, Miguel Hidalgo, 11320 Ciudad de México, CDMX",
+    location2Phone: "Tel: (55) 6811-3049",
     hours: "Horarios: 24/7",
     viewOnMap: "Ver en mapa",
 
@@ -84,7 +84,7 @@ export const translations = {
       "Sí, ofrecemos una amplia variedad de clases grupales incluidas en tu membresía: yoga, pilates, spinning, zumba, crossfit y más.",
     faq4Question: "¿Dónde están ubicados?",
     faq4Answer:
-      "Tenemos dos ubicaciones: Azcapotzalco en Av. Azcapotzalco 527, Local 15 al 17 y Nuevo Polanco en Av. Ejército Nacional 843.",
+      "Tenemos dos ubicaciones: Azcapotzalco en Av. Azcapotzalco 527, Local 15 al 17 y Nuevo Polanco en Lago Alberto 442-Local 15, Anáhuac 1 Secc, Miguel Hidalgo.",
     faq5Question: "¿Necesito experiencia previa?",
     faq5Answer:
       "No es necesario tener experiencia previa. Nuestro personal está capacitado para ayudar a personas de todos los niveles de condición física.",
@@ -181,8 +181,8 @@ export const translations = {
     location1Name: "Azcapotzalco",
     location1Address: "Av. Azcapotzalco 527. Local 15 to 17, Centro de Azcapotzalco, 02000 CDMX",
     location2Name: "Nuevo Polanco",
-    location2Address: "Av. Ejército Nacional 843, Nuevo Polanco, CDMX",
-    location2Phone: "Phone: (55) 8765-4321",
+    location2Address: "Lago Alberto 442-Local 15, Anáhuac 1 Secc, Miguel Hidalgo, 11320 Ciudad de México, CDMX",
+    location2Phone: "Phone: (55) 6811-3049",
     hours: "Hours: 24/7",
     viewOnMap: "View on map",
 
@@ -224,7 +224,7 @@ export const translations = {
       "Yes, we offer a wide variety of group classes included in your membership: yoga, pilates, spinning, zumba, crossfit and more.",
     faq4Question: "Where are you located?",
     faq4Answer:
-      "We have two locations: Azcapotzalco at Av. Azcapotzalco 527, Local 15 to 17 and Nuevo Polanco at Av. Ejército Nacional 843.",
+      "We have two locations: Azcapotzalco at Av. Azcapotzalco 527, Local 15 to 17 and Nuevo Polanco at Lago Alberto 442-Local 15, Anáhuac 1 Secc, Miguel Hidalgo.",
     faq5Question: "Do I need previous experience?",
     faq5Answer: "No previous experience is necessary. Our staff is trained to help people of all fitness levels.",
     faqTrialQuestion: "Do you have a trial day?",

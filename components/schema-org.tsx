@@ -127,10 +127,10 @@ export function SchemaOrg() {
       "description": "Gimnasio premium 24 horas en Nuevo Polanco, CDMX. Instalaciones de lujo con equipamiento Technogym, spa, clases exclusivas (Pilates, Boxing, TRX, Hot Yoga) y servicios VIP. Primera clase gratis.",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Av. Ejército Nacional 843",
-        "addressLocality": "Nuevo Polanco, Miguel Hidalgo",
+        "streetAddress": "Lago Alberto 442-Local 15",
+        "addressLocality": "Anáhuac 1 Secc, Miguel Hidalgo",
         "addressRegion": "CDMX",
-        "postalCode": "11510",
+        "postalCode": "11320",
         "addressCountry": "MX"
       },
       "geo": {
@@ -139,8 +139,8 @@ export function SchemaOrg() {
         "longitude": "-99.2019"
       },
       "url": "https://al-gym-247.vercel.app/ubicaciones/polanco",
-      "telephone": "+52-55-8765-4321",
-      "email": "polanco@algym247.com",
+      "telephone": "+52-55-6811-3049",
+      "email": "informes@algymnuevopolanco.com.mx",
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": [
