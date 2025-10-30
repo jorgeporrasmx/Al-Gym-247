@@ -125,23 +125,23 @@ export function SchemaOrg() {
         "https://al-gym-247.vercel.app/pic2.jpg",
         "https://al-gym-247.vercel.app/3.jpg"
       ],
-      "description": "Gimnasio premium 24 horas en Nuevo Polanco, CDMX. Instalaciones de lujo con equipamiento Technogym, spa, clases exclusivas (Pilates, Boxing, TRX, Hot Yoga) y servicios VIP. Primera clase gratis.",
+      "description": "Gimnasio 24 horas en Nuevo Polanco, CDMX. Clases grupales de HIIT, Funcional, Suspensión, Boxing Circuit, Step, Combat, Zumba, Yoga y Jump. Ubicado en Parques Plaza Nuevo Polanco. Primera clase gratis.",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Av. Ejército Nacional 843",
-        "addressLocality": "Nuevo Polanco, Miguel Hidalgo",
+        "streetAddress": "Parques Plaza Nuevo Polanco - Local 15, Lago Alberto 442",
+        "addressLocality": "Anáhuac 1 Sección, Miguel Hidalgo",
         "addressRegion": "CDMX",
-        "postalCode": "11510",
+        "postalCode": "11320",
         "addressCountry": "MX"
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "19.4400",
-        "longitude": "-99.2019"
+        "latitude": "19.4358",
+        "longitude": "-99.2037"
       },
       "url": "https://al-gym-247.vercel.app/ubicaciones/polanco",
-      "telephone": "+52-55-8765-4321",
-      "email": "polanco@algym247.com",
+      "telephone": "+52-55-6811-3049",
+      "email": "informes@algymnuevopolanco.com.mx",
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": [
@@ -156,8 +156,8 @@ export function SchemaOrg() {
         "opens": "00:00",
         "closes": "23:59"
       },
-      "priceRange": "$$$",
-      "paymentAccepted": "Cash, Credit Card, Debit Card, Mobile Payment, Bank Transfer",
+      "priceRange": "$$",
+      "paymentAccepted": "Cash, Credit Card, Debit Card, Mobile Payment",
       "currenciesAccepted": "MXN",
       "aggregateRating": {
         "@type": "AggregateRating",
@@ -169,62 +169,77 @@ export function SchemaOrg() {
       "amenityFeature": [
         {
           "@type": "LocationFeatureSpecification",
-          "name": "Equipamiento premium Technogym y Life Fitness",
+          "name": "AlGym HIIT - Entrenamiento interválico de alta intensidad",
           "value": true
         },
         {
           "@type": "LocationFeatureSpecification",
-          "name": "Zona cardiovascular con vistas panorámicas",
+          "name": "AlGym FUNCIONAL - Ejercicios cardiovasculares, gimnásticos y de fuerza",
           "value": true
         },
         {
           "@type": "LocationFeatureSpecification",
-          "name": "Área de entrenamiento funcional 200m²",
+          "name": "AlGym SUSPENSIÓN - Entrenamiento funcional con sistema de suspensión",
           "value": true
         },
         {
           "@type": "LocationFeatureSpecification",
-          "name": "Clases exclusivas (Pilates, Boxing, TRX, Hot Yoga)",
+          "name": "AlGym BOXING CIRCUIT - Circuito de alta intensidad con técnicas de box",
           "value": true
         },
         {
           "@type": "LocationFeatureSpecification",
-          "name": "Spa con sauna, vapor y jacuzzi",
+          "name": "AlGym ABS - 30 minutos de entrenamiento del Core",
           "value": true
         },
         {
           "@type": "LocationFeatureSpecification",
-          "name": "Acceso 24/7",
+          "name": "AlGym STEP - Coreografía aeróbica con escalón",
           "value": true
         },
         {
           "@type": "LocationFeatureSpecification",
-          "name": "Vestidores premium con amenidades de lujo",
+          "name": "AlGym COMBAT - Circuito aeróbico con artes marciales",
           "value": true
         },
         {
           "@type": "LocationFeatureSpecification",
-          "name": "Valet parking",
+          "name": "AlGym GAP - Entrenamiento de glúteos, abdominales y piernas",
           "value": true
         },
         {
           "@type": "LocationFeatureSpecification",
-          "name": "Lounge con café y snacks saludables",
+          "name": "ZUMBA - Baile fitness con rutinas aeróbicas",
           "value": true
         },
         {
           "@type": "LocationFeatureSpecification",
-          "name": "WiFi de fibra óptica",
+          "name": "AlGym YOGA - Práctica integral cuerpo y mente",
           "value": true
         },
         {
           "@type": "LocationFeatureSpecification",
-          "name": "Entrenadores certificados internacionalmente",
+          "name": "AlGym JUMP - Entrenamiento dinámico con mini trampolín",
           "value": true
         },
         {
           "@type": "LocationFeatureSpecification",
-          "name": "App móvil para reservas",
+          "name": "Equipamiento moderno para entrenamiento de fuerza",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Zona cardiovascular completa",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Vestidores y regaderas",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Acceso 24/7 todos los días",
           "value": true
         }
       ],

@@ -46,43 +46,45 @@ export const metadata: Metadata = {
   },
 }
 
-// TODO: Update with real location data before production (see PLACEHOLDERS-TODO.md)
 const locationData = {
   name: "Algym247 Nuevo Polanco",
-  address: "Av. Ejército Nacional 843, Nuevo Polanco, Miguel Hidalgo, CDMX, CP 11510", // TODO: Verify address
+  address: "Parques Plaza Nuevo Polanco - Local 15, Lago Alberto 442, Anáhuac 1 Sección, Miguel Hidalgo, CDMX, CP 11320",
   neighborhood: "Nuevo Polanco",
-  phone: "+52 55 8765 4321", // TODO: Real phone number
-  whatsapp: "+52 55 8765 4321", // TODO: Real WhatsApp number
-  email: "polanco@algym247.com", // TODO: Verify email works
+  phone: "+52 55 6811 3049",
+  whatsapp: "+52 55 6811 3049",
+  email: "informes@algymnuevopolanco.com.mx",
   hours: "24 horas, 7 días a la semana",
   coordinates: {
-    lat: 19.44, // TODO: Verify real GPS coordinates
-    lng: -99.2019, // TODO: Verify real GPS coordinates
+    lat: 19.4358,
+    lng: -99.2037,
   },
-  mapUrl: "https://maps.google.com/?q=19.4400,-99.2019",
+  mapUrl: "https://maps.google.com/?q=Lago+Alberto+442,+Anáhuac+I+Secc,+Miguel+Hidalgo,+11320+CDMX",
   embedMapUrl:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15045.234567890!2d-99.2019!3d19.4400!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDI2JzI0LjAiTiA5OcKwMTInMDYuOCJX!5e0!3m2!1ses!2smx!4v1234567890",
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.3!2d-99.2037!3d19.4358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f8d5e5e5e5e5%3A0x5e5e5e5e5e5e5e5e!2sLago%20Alberto%20442%2C%20Anáhuac%20I%20Secc%2C%20Miguel%20Hidalgo%2C%2011320%20CDMX!5e0!3m2!1ses!2smx!4v1234567890",
   features: [
-    "Equipamiento premium Technogym y Life Fitness",
-    "Zona cardiovascular con vistas panorámicas",
-    "Área de entrenamiento funcional de 200m²",
-    "Clases exclusivas: Pilates, Boxing, TRX, Hot Yoga",
-    "Spa con sauna, vapor y jacuzzi",
-    "Vestidores premium con amenidades de lujo",
-    "Regaderas individuales con productos de cortesía",
-    "Estacionamiento valet parking disponible",
-    "Lounge área con café y snacks saludables",
-    "WiFi de fibra óptica en todas las instalaciones",
-    "Entrenadores personales certificados internacionalmente",
-    "Sistema de reserva de clases vía app móvil",
+    "AlGym HIIT - Entrenamiento interválico de alta intensidad",
+    "AlGym FUNCIONAL - Ejercicios cardiovasculares, gimnásticos y de fuerza",
+    "AlGym SUSPENSIÓN - Entrenamiento funcional con sistema de suspensión (TRX)",
+    "AlGym BOXING CIRCUIT - Circuito de alta intensidad combinando funcional y box",
+    "AlGym ABS - 30 minutos de entrenamiento del Core con bandas y discos",
+    "AlGym STEP - Coreografía aeróbica con escalón y música",
+    "AlGym COMBAT - Circuito aeróbico con movimientos de artes marciales",
+    "AlGym GAP - 30 minutos exclusivos para glúteos, abdominales y piernas",
+    "ZUMBA - Baile fitness con movimientos aeróbicos y coreografías",
+    "AlGym YOGA - Práctica integral para cuerpo y mente",
+    "AlGym JUMP - Entrenamiento dinámico con mini trampolín",
+    "Equipamiento moderno para entrenamiento de fuerza",
+    "Zona cardiovascular completa",
+    "Vestidores y regaderas",
+    "Acceso 24/7 todos los días",
   ],
   images: ["/pic2.jpg", "/3.jpg", "/pic1.jpg"],
   nearbyLandmarks: [
-    "A 3 minutos del Metro San Joaquín (Línea 7)",
-    "Frente a Antara Polanco",
-    "Cerca de Plaza Carso y Museo Soumaya",
-    "Acceso directo desde Ejército Nacional",
-    "Zona corporativa y residencial premium",
+    "Parques Plaza Nuevo Polanco",
+    "Lago Alberto 442, Anáhuac 1 Sección",
+    "Zona de Nuevo Polanco y Anáhuac",
+    "Cerca de Circuito Interior",
+    "Fácil acceso en transporte público y automóvil",
   ],
   testimonial: {
     name: "Carlos Mendoza", // TODO: Replace with real testimonial
