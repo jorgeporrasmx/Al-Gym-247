@@ -300,7 +300,7 @@ export function LocationDetail({ location }: LocationDetailProps) {
                 </div>
                 <div>
                   <p className="font-semibold text-gray-900">{location.testimonial.name}</p>
-                  <p className="text-sm text-gray-500">Miembro de Algym247</p>
+                  <p className="text-sm text-gray-500">Socio de Algym247</p>
                 </div>
               </div>
             </CardContent>

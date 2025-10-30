@@ -38,8 +38,8 @@ export const translations = {
     // Locations Section
     locationsTitle: "Nuestras Ubicaciones",
     location1Name: "Azcapotzalco",
-    location1Address: "Av. Aquiles Serdán 1234, Azcapotzalco, CDMX",
-    location1Phone: "Tel: (55) 1234-5678",
+    location1Address: "Av. Azcapotzalco 527. Local 15 al 17, Centro de Azcapotzalco, 02000 CDMX",
+    location1Phone: "Tel: +52 55 1234 5678",
     location2Name: "Nuevo Polanco",
     location2Address: "Av. Ejército Nacional 843, Nuevo Polanco, CDMX",
     location2Phone: "Tel: (55) 8765-4321",
@@ -47,7 +47,7 @@ export const translations = {
     viewOnMap: "Ver en mapa",
 
     // Testimonials Section
-    testimonialsTitle: "Lo que dicen nuestros miembros",
+    testimonialsTitle: "Lo que dicen nuestros socios",
     testimonial1Name: "Esmeralda Giménez Díaz",
     testimonial1Quote:
       "Un buen lugar, además es 24/7, a cualquier hora puedes ir, hay buen ambiente y excelentes entrenadores, por nada del mundo cambiaría a otro gym",
@@ -85,7 +85,7 @@ export const translations = {
       "Sí, ofrecemos una amplia variedad de clases grupales incluidas en tu membresía: yoga, pilates, spinning, zumba, crossfit y más.",
     faq4Question: "¿Dónde están ubicados?",
     faq4Answer:
-      "Tenemos dos ubicaciones: Azcapotzalco en Av. Aquiles Serdán 1234 y Nuevo Polanco en Av. Ejército Nacional 843.",
+      "Tenemos dos ubicaciones: Azcapotzalco en Av. Azcapotzalco 527, Local 15 al 17 y Nuevo Polanco en Av. Ejército Nacional 843.",
     faq5Question: "¿Necesito experiencia previa?",
     faq5Answer:
       "No es necesario tener experiencia previa. Nuestro personal está capacitado para ayudar a personas de todos los niveles de condición física.",
@@ -137,7 +137,7 @@ export const translations = {
     locationHowToGet: "Cómo llegar",
     locationOpenMap: "Abrir en Google Maps",
     locationGalleryTitle: "Conoce Nuestras Instalaciones",
-    locationTestimonialsTitle: "Lo que dicen nuestros miembros",
+    locationTestimonialsTitle: "Lo que dicen nuestros socios",
     locationVisitUs: "Visítanos en",
     locationFirstClassFree: "Primera clase completamente gratis. Sin compromisos.",
     locationReserveNow: "Reservar ahora",
@@ -180,8 +180,8 @@ export const translations = {
     // Locations Section
     locationsTitle: "Our Locations",
     location1Name: "Azcapotzalco",
-    location1Address: "Av. Aquiles Serdán 1234, Azcapotzalco, CDMX",
-    location1Phone: "Phone: (55) 1234-5678",
+    location1Address: "Av. Azcapotzalco 527. Local 15 to 17, Centro de Azcapotzalco, 02000 CDMX",
+    location1Phone: "Phone: +52 55 1234 5678",
     location2Name: "Nuevo Polanco",
     location2Address: "Av. Ejército Nacional 843, Nuevo Polanco, CDMX",
     location2Phone: "Phone: (55) 8765-4321",
@@ -189,7 +189,7 @@ export const translations = {
     viewOnMap: "View on map",
 
     // Testimonials Section
-    testimonialsTitle: "What our members say",
+    testimonialsTitle: "What our partners say",
     testimonial1Name: "Esmeralda Giménez Díaz",
     testimonial1Quote:
       "A good place, plus it's 24/7, you can go at any time, there's a good atmosphere and excellent trainers, I wouldn't change to another gym for anything in the world",
@@ -226,7 +226,7 @@ export const translations = {
       "Yes, we offer a wide variety of group classes included in your membership: yoga, pilates, spinning, zumba, crossfit and more.",
     faq4Question: "Where are you located?",
     faq4Answer:
-      "We have two locations: Azcapotzalco at Av. Aquiles Serdán 1234 and Nuevo Polanco at Av. Ejército Nacional 843.",
+      "We have two locations: Azcapotzalco at Av. Azcapotzalco 527, Local 15 to 17 and Nuevo Polanco at Av. Ejército Nacional 843.",
     faq5Question: "Do I need previous experience?",
     faq5Answer: "No previous experience is necessary. Our staff is trained to help people of all fitness levels.",
     faqTrialQuestion: "Do you have a trial day?",
@@ -238,7 +238,7 @@ export const translations = {
     viewMap: "View map",
 
     // Member Testimonials Section
-    memberTestimonialsTitle: "What our members say",
+    memberTestimonialsTitle: "What our partners say",
     memberTestimonialsSubtitle: "Discover why thousands of people have chosen Algym247 to transform their lifestyle.",
 
     // Featured Testimonial Section
@@ -276,7 +276,7 @@ export const translations = {
     locationHowToGet: "Get directions",
     locationOpenMap: "Open in Google Maps",
     locationGalleryTitle: "Discover Our Facilities",
-    locationTestimonialsTitle: "What our members say",
+    locationTestimonialsTitle: "What our partners say",
     locationVisitUs: "Visit us in",
     locationFirstClassFree: "First class completely free. No commitments.",
     locationReserveNow: "Reserve now",

@@ -68,7 +68,6 @@ const locationData = {
     "Clases grupales incluidas: Boxeo, Spinning, Bouncing, Funcional y más",
     "Vestidores amplios con lockers de seguridad",
     "Regaderas con agua caliente 24/7",
-    "Estacionamiento gratuito para miembros",
     "WiFi de alta velocidad en todas las áreas",
     "Acceso con Tarjeta Llave personal 24/7",
     "Personal de apoyo disponible en horarios pico",

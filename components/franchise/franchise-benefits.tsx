@@ -9,7 +9,7 @@ export function FranchiseBenefits() {
       icon: Shield,
       title: "Marca Reconocida",
       description:
-        "Aprovecha el prestigio y reconocimiento de Algym247, líder en fitness 24/7 en México con miles de miembros satisfechos.",
+        "Aprovecha el prestigio y reconocimiento de Algym247, líder en fitness 24/7 en México con miles de socios satisfechos.",
     },
     {
       icon: BookOpen,

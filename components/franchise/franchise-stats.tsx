@@ -13,7 +13,7 @@ export function FranchiseStats() {
     {
       icon: Users,
       value: "50K+",
-      label: "Miembros Activos",
+      label: "Socios Activos",
       description: "Personas transformando sus vidas",
     },
     {
