@@ -49,8 +49,8 @@ export const LOCATIONS: Record<string, Location> = {
       country: "México",
       full: "Av. Azcapotzalco 527. Local 15 al 17, Centro de Azcapotzalco, 02000 CDMX",
     },
-    phone: "+52 55 1234 5678",
-    whatsapp: "+525512345678",
+    phone: "",
+    whatsapp: "",
     email: "azcapotzalco@algym247.com",
     coordinates: {
       lat: 19.4569,

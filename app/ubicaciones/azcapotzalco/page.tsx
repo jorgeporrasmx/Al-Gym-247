@@ -50,8 +50,8 @@ const locationData = {
   name: "Algym247 Azcapotzalco",
   address: "Av. Azcapotzalco 527. Local 15 al 17, Centro de Azcapotzalco, 02000 CDMX",
   neighborhood: "Azcapotzalco",
-  phone: "+52 55 1234 5678", // TODO: Real phone number
-  whatsapp: "+52 55 1234 5678", // Mismo que WhatsApp principal
+  phone: "", // No phone number for this location
+  whatsapp: "", // No WhatsApp for this location
   email: "azcapotzalco@algym247.com", // TODO: Verify email works
   hours: "24 horas, 7 días a la semana",
   coordinates: {
@@ -138,7 +138,6 @@ export default function AzcapotzalcoPage() {
       "longitude": "-99.1895"
     },
     "url": "https://al-gym-247.vercel.app/ubicaciones/azcapotzalco",
-    "telephone": "+52-55-1234-5678",
     "email": "azcapotzalco@algym247.com",
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",

@@ -13,7 +13,7 @@ import {
   CheckCircle2,
   MessageCircle,
 } from "lucide-react"
-import { getWhatsAppURL } from "@/config/contacts"
+import { getWhatsAppURL, getPhoneURL, CONTACTS } from "@/config/contacts"
 import { useLanguage } from "@/contexts/language-context"
 
 interface LocationDetailProps {
@@ -53,7 +53,9 @@ export function LocationDetail({ location }: LocationDetailProps) {
   }
 
   const handleCallClick = () => {
-    window.location.href = `tel:${location.phone}`
+    // Use location phone if available, otherwise use central phone
+    const phoneToUse = location.phone || CONTACTS.phone.number
+    window.location.href = `tel:${phoneToUse}`
   }
 
   const handleDirectionsClick = () => {
@@ -82,16 +84,6 @@ export function LocationDetail({ location }: LocationDetailProps) {
                 <div className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 mt-1 text-primary flex-shrink-0" />
                   <span className="text-lg">{location.address}</span>
-                </div>
-
-                <div className="flex items-center gap-3">
-                  <Phone className="w-5 h-5 text-primary flex-shrink-0" />
-                  <a
-                    href={`tel:${location.phone}`}
-                    className="text-lg hover:text-primary transition-colors"
-                  >
-                    {location.phone}
-                  </a>
                 </div>
 
                 <div className="flex items-center gap-3">
@@ -220,6 +212,13 @@ export function LocationDetail({ location }: LocationDetailProps) {
                   <p className="text-gray-600">
                     {t("locationReadyDescription")}
                   </p>
+                  {!location.phone && (
+                    <p className="text-sm text-gray-500 italic">
+                      {language === "es"
+                        ? "Contacta nuestra línea de atención general para más información"
+                        : "Contact our general support line for more information"}
+                    </p>
+                  )}
                   <div className="flex flex-col sm:flex-row gap-3">
                     <Button
                       className="flex-1 bg-primary hover:bg-primary/90"
@@ -232,7 +231,7 @@ export function LocationDetail({ location }: LocationDetailProps) {
                       variant="outline"
                       className="flex-1"
                       onClick={handleCallClick}
-                      title="Llamar ahora"
+                      title={language === "es" ? "Llamar ahora" : "Call now"}
                     >
                       <Phone className="w-4 h-4 mr-2" />
                       {t("call")}

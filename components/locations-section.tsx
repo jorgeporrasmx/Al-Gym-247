@@ -15,7 +15,7 @@ export function LocationsSection() {
     {
       name: t("location1Name"),
       address: t("location1Address"),
-      phone: t("location1Phone"),
+      phone: "", // No phone for Azcapotzalco
       hours: t("hours"),
       mapUrl: "https://maps.google.com/?q=Azcapotzalco+CDMX",
     },
@@ -58,12 +58,14 @@ export function LocationsSection() {
                         </span>
                       </div>
 
-                      <div className="flex items-center gap-2 group/item">
-                        <Phone className="w-4 h-4 text-primary transition-all duration-300 group-hover/item:scale-110 group-hover-brand-orange" />
-                        <span className="text-sm transition-colors duration-300 group-hover:text-foreground">
-                          {location.phone}
-                        </span>
-                      </div>
+                      {location.phone && (
+                        <div className="flex items-center gap-2 group/item">
+                          <Phone className="w-4 h-4 text-primary transition-all duration-300 group-hover/item:scale-110 group-hover-brand-orange" />
+                          <span className="text-sm transition-colors duration-300 group-hover:text-foreground">
+                            {location.phone}
+                          </span>
+                        </div>
+                      )}
 
                       <div className="flex items-center gap-2 group/item">
                         <Clock className="w-4 h-4 text-primary transition-all duration-300 group-hover/item:scale-110 group-hover-brand-orange" />
