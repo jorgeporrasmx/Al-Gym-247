@@ -23,14 +23,8 @@ export function HeroSection() {
           <div className="space-y-2 md:space-y-3">
             {/* Main Heading */}
             <div className="animate-fade-in-up">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight transition-all duration-500 hover:scale-105">
-                {t("heroTitle")
-                  .split(" ")
-                  .map((word, index) => (
-                    <span key={index} className={index === 0 ? "block" : "block"}>
-                      {word}
-                    </span>
-                  ))}
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight transition-all duration-500 hover:scale-105 max-w-xl">
+                {t("heroTitle")}
               </h1>
               <p className="text-base md:text-lg mt-2 md:mt-3 font-bold animate-fade-in-up animation-delay-200" style={{ color: '#FD3502' }}>
                 {t("heroSubtitle")}
