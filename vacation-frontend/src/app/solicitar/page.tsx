@@ -25,7 +25,7 @@ export default function SolicitarPage() {
   const [motivo, setMotivo] = useState('');
   const [diasCalculados, setDiasCalculados] = useState<number | null>(null);
 
-  const minDate = addDays(new Date(), 15);
+  const minDate = new Date(); // Permite seleccionar desde hoy
 
   useEffect(() => {
     if (!authLoading && !user) {
@@ -140,7 +140,7 @@ export default function SolicitarPage() {
                 minDate={minDate}
               />
               <p className="text-sm text-gray-500 mt-2">
-                * Las solicitudes deben hacerse con al menos 15 días de anticipación
+                * Selecciona la fecha de inicio y fin de tus vacaciones
               </p>
             </div>
 

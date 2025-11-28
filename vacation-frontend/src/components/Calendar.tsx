@@ -62,11 +62,15 @@ export default function Calendar({
   const handleDayClick = (date: Date) => {
     if (isDisabled(date)) return;
 
-    if (!selectedStart || (selectedStart && selectedEnd)) {
+    // Si no hay fecha de inicio, o si ya hay ambas fechas seleccionadas, empezar de nuevo
+    if (!selectedStart || (selectedStart && selectedEnd && !isSameDay(selectedStart, selectedEnd))) {
       onSelectStart(date);
       onSelectEnd(date);
     } else {
+      // Ya hay fecha de inicio seleccionada, ahora seleccionar fecha fin
       if (date < selectedStart) {
+        // Si la fecha es anterior, intercambiar
+        onSelectEnd(selectedStart);
         onSelectStart(date);
       } else {
         onSelectEnd(date);
