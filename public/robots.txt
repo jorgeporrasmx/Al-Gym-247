@@ -15,11 +15,25 @@ Sitemap: https://al-gym-247.vercel.app/sitemap.xml
 # Crawl-delay (optional, helps with server load)
 Crawl-delay: 1
 
-# Specific bots
+# Google Search Bot
 User-agent: Googlebot
 Allow: /
 Crawl-delay: 0
 
+# Google AdsBot - CRITICAL for Google Ads landing pages
+# AdsBot checks landing page quality for ads
+User-agent: AdsBot-Google
+Allow: /
+
+# Google AdsBot Mobile
+User-agent: AdsBot-Google-Mobile
+Allow: /
+
+# Google Mobile Apps Ads Bot
+User-agent: AdsBot-Google-Mobile-Apps
+Allow: /
+
+# Bing Bot
 User-agent: Bingbot
 Allow: /
 Crawl-delay: 1

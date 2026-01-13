@@ -46,6 +46,39 @@ const nextConfig = {
           }
         ],
       },
+      // Headers for robots.txt - ensure crawlers can always access it
+      {
+        source: '/robots.txt',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=3600, s-maxage=3600'
+          },
+          {
+            key: 'Content-Type',
+            value: 'text/plain; charset=utf-8'
+          }
+        ],
+      },
+      // Headers for landing pages - optimize for AdsBot crawling
+      {
+        source: '/',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=0, s-maxage=3600, stale-while-revalidate=86400'
+          }
+        ],
+      },
+      {
+        source: '/ubicaciones/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=0, s-maxage=3600, stale-while-revalidate=86400'
+          }
+        ],
+      },
     ]
   },
 };
