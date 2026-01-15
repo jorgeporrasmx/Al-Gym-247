@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
 import { LanguageProvider } from "@/contexts/language-context"
 import { GoogleTagManager } from "@/components/google-tag-manager"
+import { GoogleAdsTag } from "@/components/google-ads-tag"
 import { SchemaOrg } from "@/components/schema-org"
 import { dinPro } from "./fonts"
 import "./globals.css"
@@ -88,6 +89,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
+        <GoogleAdsTag />
         <SchemaOrg />
       </head>
       <body className={`${dinPro.variable} font-sans antialiased`}>
