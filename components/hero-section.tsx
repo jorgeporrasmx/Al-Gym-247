@@ -93,7 +93,7 @@ export function HeroSection() {
                 loop
                 playsInline
                 controls
-                poster="/pic1.jpg"
+                poster="/recepcionista.jpg"
               >
                 <source
                   src="/Conoce-Al-Gym.mp4"
