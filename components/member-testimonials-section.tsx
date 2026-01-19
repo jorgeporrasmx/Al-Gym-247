@@ -1,6 +1,7 @@
 "use client"
 
 import { useLanguage } from "@/contexts/language-context"
+import { CONTACTS } from "@/config/contacts"
 
 export function MemberTestimonialsSection() {
   const { t } = useLanguage()
@@ -52,7 +53,9 @@ export function MemberTestimonialsSection() {
               ¿Listo para comenzar tu transformación?
             </p>
             <a
-              href="#contacto"
+              href={CONTACTS.forms.interest}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center text-primary hover:text-primary/80 font-semibold text-lg transition-colors duration-200"
             >
               Reserva tu clase gratis →
