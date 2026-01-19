@@ -14,8 +14,8 @@ export function FeaturesSection() {
       ),
       title: t("feature1Title"),
       description: t("feature1Description"),
-      image: "/2.jpeg",
-      altText: "Equipos modernos de gimnasio en Algym247 CDMX - Máquinas de última generación",
+      image: "/pic1.jpg",
+      altText: "Área de spinning en Algym247 CDMX - Bicicletas de última generación",
     },
     {
       icon: (
