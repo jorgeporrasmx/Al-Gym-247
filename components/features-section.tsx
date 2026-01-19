@@ -32,8 +32,8 @@ export function FeaturesSection() {
       ),
       title: t("feature3Title"),
       description: t("feature3Description"),
-      image: "/3.jpg",
-      altText: "Gimnasio 24 horas CDMX - Acceso ilimitado Algym247 Azcapotzalco y Polanco",
+      image: "/acceso-24-7.jpg",
+      altText: "Tarjeta de acceso 24/7 Algym247 - Entrada con tarjeta NFC al gimnasio",
     },
   ]
 
