@@ -6,6 +6,7 @@ import { LanguageProvider } from "@/contexts/language-context"
 import { GoogleTagManager } from "@/components/google-tag-manager"
 import { GoogleAdsTag } from "@/components/google-ads-tag"
 import { SchemaOrg } from "@/components/schema-org"
+import { MetricoolPixel } from "@/components/metricool-pixel"
 import { dinPro } from "./fonts"
 import "./globals.css"
 
@@ -100,6 +101,7 @@ export default function RootLayout({
             <Analytics />
           </Suspense>
         </LanguageProvider>
+        <MetricoolPixel />
       </body>
     </html>
   )
