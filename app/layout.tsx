@@ -72,9 +72,7 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  icons: {
-    icon: '/favicon.ico',
-  },
+  // Icons are handled automatically by Next.js via app/icon.svg
   // TODO: Add verification codes when available
   // verification: {
   //   google: 'google-site-verification-code-here',
