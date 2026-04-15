@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="#FD3502">
+  <!-- Punto/título encima de la y -->
+  <circle cx="55" cy="14" r="9"/>
+  <!-- Letra y minúscula bold -->
+  <path d="M 18 30
+           L 35 30
+           L 50 62
+           L 65 30
+           L 82 30
+           L 60 78
+           Q 55 90 44 90
+           L 26 90
+           L 30 78
+           L 42 78
+           Q 47 78 49 73
+           L 52 67
+           Z" />
+</svg>
