@@ -6,11 +6,11 @@
 export const CONTACTS = {
   // Números de contacto
   whatsapp: {
-    number: '525569028493',
-    displayNumber: '+52 55 6902 8493',
+    number: '5215565215702',
+    displayNumber: '+52 1 55 6521 5702',
     defaultMessage: {
-      es: '¡Hola! Me interesa conocer más sobre Algym247.',
-      en: 'Hello! I\'m interested in learning more about Algym247.'
+      es: 'Hola, quiero informes de Al Gym Azcapotzalco',
+      en: 'Hello, I would like information about Al Gym Azcapotzalco.'
     }
   },
 

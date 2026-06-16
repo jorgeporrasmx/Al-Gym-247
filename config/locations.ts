@@ -49,8 +49,8 @@ export const LOCATIONS: Record<string, Location> = {
       country: "México",
       full: "Av. Azcapotzalco 527. Local 15 al 17, Centro de Azcapotzalco, 02000 CDMX",
     },
-    phone: "",
-    whatsapp: "",
+    phone: "+1 672 207 2221",
+    whatsapp: "+5215565215702",
     email: "azcapotzalco@algym247.com",
     coordinates: {
       lat: 19.4569,
@@ -104,7 +104,7 @@ export const COMPANY_INFO = {
     "Cadena de gimnasios 24 horas en Ciudad de México. Equipamiento moderno, clases incluidas y acceso ilimitado.",
   founded: "2020",
   email: "contacto@algym247.com", // TODO: Verify email
-  phone: "+52 55 1234 5678", // TODO: Real main contact number
+  phone: "+1 672 207 2221",
   website: "https://al-gym-247.vercel.app",
   social: {
     facebook: "https://www.facebook.com/algym247", // TODO: Verify URL

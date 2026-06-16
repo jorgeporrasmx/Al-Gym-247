@@ -30,6 +30,7 @@ export function SchemaOrg() {
         "longitude": "-99.1895"
       },
       "url": "https://al-gym-247.vercel.app/ubicaciones/azcapotzalco",
+      "telephone": "+1-672-207-2221",
       "email": "azcapotzalco@algym247.com",
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
@@ -252,7 +253,7 @@ export function SchemaOrg() {
     "foundingDate": "2020",
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+52-55-1234-5678",
+      "telephone": "+1-672-207-2221",
       "contactType": "customer service",
       "areaServed": "MX",
       "availableLanguage": ["Spanish", "English"],
