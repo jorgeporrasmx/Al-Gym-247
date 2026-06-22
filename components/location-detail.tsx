@@ -115,7 +115,7 @@ export function LocationDetail({ location }: LocationDetailProps) {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="text-white border-white hover:bg-white hover:text-primary"
+                  className="bg-transparent text-white border-2 border-white hover:bg-white hover:text-primary transition-all duration-200"
                   onClick={handleDirectionsClick}
                 >
                   <Navigation className="w-5 h-5 mr-2" />
@@ -221,7 +221,7 @@ export function LocationDetail({ location }: LocationDetailProps) {
                   )}
                   <div className="flex flex-col sm:flex-row gap-3">
                     <Button
-                      className="flex-1 bg-primary hover:bg-primary/90"
+                      className="flex-1 bg-primary hover:bg-primary/90 text-white"
                       onClick={handleWhatsAppClick}
                     >
                       <MessageCircle className="w-4 h-4 mr-2" />
@@ -229,7 +229,7 @@ export function LocationDetail({ location }: LocationDetailProps) {
                     </Button>
                     <Button
                       variant="outline"
-                      className="flex-1"
+                      className="flex-1 border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all duration-200"
                       onClick={handleCallClick}
                       title={language === "es" ? "Llamar ahora" : "Call now"}
                     >
@@ -319,7 +319,7 @@ export function LocationDetail({ location }: LocationDetailProps) {
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
             <Button
               size="lg"
-              className="bg-white text-primary hover:bg-gray-100"
+              className="bg-white text-primary hover:bg-gray-100 transition-all duration-200"
               onClick={handleWhatsAppClick}
             >
               <MessageCircle className="w-5 h-5 mr-2" />
@@ -328,7 +328,7 @@ export function LocationDetail({ location }: LocationDetailProps) {
             <Button
               size="lg"
               variant="outline"
-              className="text-white border-white hover:bg-white hover:text-primary"
+              className="bg-transparent text-white border-2 border-white hover:bg-white hover:text-primary transition-all duration-200"
               onClick={handleDirectionsClick}
             >
               <Navigation className="w-5 h-5 mr-2" />

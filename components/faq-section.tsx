@@ -92,7 +92,7 @@ export function FAQSection() {
                               variant="outline"
                               size="sm"
                               onClick={() => window.open(location.mapUrl, "_blank")}
-                              className="transition-all duration-300 hover:scale-105 hover:shadow-md hover-bg-brand-orange-light hover-border-brand-orange hover-brand-orange"
+                              className="bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all duration-300 hover:scale-105 hover:shadow-md"
                             >
                               <ExternalLink className="w-4 h-4 mr-1 transition-transform duration-300 hover:scale-110" />
                               {t("viewMap")}

@@ -95,7 +95,12 @@ export function TestimonialsSection() {
 
           {/* Navigation */}
           <div className="flex justify-center gap-4 mt-8">
-            <Button variant="outline" size="icon" onClick={prevTestimonial} className="rounded-full bg-transparent">
+            <Button 
+              variant="outline" 
+              size="icon" 
+              onClick={prevTestimonial} 
+              className="rounded-full bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all duration-200"
+            >
               <ChevronLeft className="w-4 h-4" />
             </Button>
 
@@ -111,7 +116,12 @@ export function TestimonialsSection() {
               ))}
             </div>
 
-            <Button variant="outline" size="icon" onClick={nextTestimonial} className="rounded-full bg-transparent">
+            <Button 
+              variant="outline" 
+              size="icon" 
+              onClick={nextTestimonial} 
+              className="rounded-full bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all duration-200"
+            >
               <ChevronRight className="w-4 h-4" />
             </Button>
           </div>

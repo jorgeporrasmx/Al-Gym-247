@@ -54,7 +54,7 @@ export function FranchiseHero() {
               <Button
                 size="lg"
                 variant="outline"
-                className="text-white border-white hover:bg-white/10"
+                className="bg-transparent text-white border-2 border-white hover:bg-white hover:text-primary transition-all duration-200"
                 onClick={scrollToForm}
               >
                 Ver Beneficios

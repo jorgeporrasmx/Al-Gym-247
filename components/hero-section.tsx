@@ -23,6 +23,9 @@ export function HeroSection() {
           <div className="space-y-2 md:space-y-3">
             {/* Main Heading */}
             <div className="animate-fade-in-up">
+              <p className="text-lg sm:text-xl md:text-2xl font-bold mb-2 md:mb-3" style={{ color: '#FD3502' }}>
+                {t("heroSlogan")}
+              </p>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight transition-all duration-500 hover:scale-105 max-w-xl">
                 {t("heroTitle")}
               </h1>

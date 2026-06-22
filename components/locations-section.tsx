@@ -92,7 +92,7 @@ export function LocationsSection() {
                       <Button
                         variant="outline"
                         size="sm"
-                        className="flex-1 bg-transparent transition-all duration-300 hover:scale-105 hover:shadow-md hover-bg-brand-orange-light hover-border-brand-orange hover-brand-orange"
+                        className="flex-1 bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all duration-300 hover:scale-105 hover:shadow-md"
                         onClick={() => window.open(location.mapUrl, "_blank")}
                       >
                         {t("viewOnMap")}

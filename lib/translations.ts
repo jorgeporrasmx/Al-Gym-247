@@ -14,6 +14,7 @@ export const translations = {
     navContact: "Contacto",
 
     // Hero Section
+    heroSlogan: "¡Vamos Al Gym!",
     heroTitle: "Fitness para Todos",
     heroSubtitle: "Tu mejor versión, a cualquier hora. ¡Vamos Al Gym!",
     searchGym: "¿Buscas Gym?",
@@ -158,6 +159,7 @@ export const translations = {
     navContact: "Contact",
 
     // Hero Section
+    heroSlogan: "Let's Go to the Gym!",
     heroTitle: "Fitness for Everyone",
     heroSubtitle: "Your best version, anytime. Let's Go to the Gym!",
     searchGym: "Looking for a Gym?",

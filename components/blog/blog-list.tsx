@@ -25,7 +25,10 @@ export function BlogList({ posts, categories }: BlogListProps) {
           <Button
             variant={selectedCategory === null ? "default" : "outline"}
             onClick={() => setSelectedCategory(null)}
-            className="transition-all duration-300 hover:scale-105"
+            className={selectedCategory === null 
+              ? "transition-all duration-300 hover:scale-105" 
+              : "bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all duration-300 hover:scale-105"
+            }
           >
             Todos
           </Button>
@@ -34,7 +37,10 @@ export function BlogList({ posts, categories }: BlogListProps) {
               key={category}
               variant={selectedCategory === category ? "default" : "outline"}
               onClick={() => setSelectedCategory(category)}
-              className="transition-all duration-300 hover:scale-105"
+              className={selectedCategory === category
+                ? "transition-all duration-300 hover:scale-105"
+                : "bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all duration-300 hover:scale-105"
+              }
             >
               {category}
             </Button>
