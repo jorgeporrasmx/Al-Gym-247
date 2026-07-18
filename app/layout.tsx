@@ -73,11 +73,9 @@ export const metadata: Metadata = {
     },
   },
   // Icons are handled automatically by Next.js via app/icon.svg
-  // TODO: Add verification codes when available
-  // verification: {
-  //   google: 'google-site-verification-code-here',
-  //   yandex: 'yandex-verification-code-here',
-  // },
+  verification: {
+    google: 'Ogz6V8IxVphjYTnfCzM6m65n88e-ruhG0zkSnDNMZcQ',
+  },
 }
 
 export default function RootLayout({
