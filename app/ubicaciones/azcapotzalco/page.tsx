@@ -32,7 +32,7 @@ export const metadata: Metadata = {
       "Gimnasio 24 horas en Av. Azcapotzalco 527 con clases de Boxeo, Spinning, Bouncing y Funcional. A 5 min del Metro Camarones. ¡Primera clase gratis!",
     type: "website",
     locale: "es_MX",
-    url: "https://al-gym-247.vercel.app/ubicaciones/azcapotzalco",
+    url: "https://www.algym247.com/ubicaciones/azcapotzalco",
     siteName: "Algym247",
   },
   twitter: {
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
       "Gimnasio 24 horas con clases de Boxeo, Spinning, Bouncing y Funcional. A 5 min del Metro Camarones. ¡Primera clase gratis!",
   },
   alternates: {
-    canonical: "https://al-gym-247.vercel.app/ubicaciones/azcapotzalco",
+    canonical: "https://www.algym247.com/ubicaciones/azcapotzalco",
   },
 }
 
@@ -96,19 +96,19 @@ export default function AzcapotzalcoPage() {
         "@type": "ListItem",
         "position": 1,
         "name": "Inicio",
-        "item": "https://al-gym-247.vercel.app"
+        "item": "https://www.algym247.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Ubicaciones",
-        "item": "https://al-gym-247.vercel.app/#ubicaciones"
+        "item": "https://www.algym247.com/#ubicaciones"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Azcapotzalco",
-        "item": "https://al-gym-247.vercel.app/ubicaciones/azcapotzalco"
+        "item": "https://www.algym247.com/ubicaciones/azcapotzalco"
       }
     ]
   }
@@ -116,12 +116,12 @@ export default function AzcapotzalcoPage() {
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "GymHealthClub",
-    "@id": "https://al-gym-247.vercel.app/ubicaciones/azcapotzalco",
+    "@id": "https://www.algym247.com/ubicaciones/azcapotzalco",
     "name": "Algym247 Azcapotzalco",
     "image": [
-      "https://al-gym-247.vercel.app/pic1.jpg",
-      "https://al-gym-247.vercel.app/pic2.jpg",
-      "https://al-gym-247.vercel.app/pic3.jpg"
+      "https://www.algym247.com/pic1.jpg",
+      "https://www.algym247.com/pic2.jpg",
+      "https://www.algym247.com/pic3.jpg"
     ],
     "description": "Gimnasio 24 horas en Azcapotzalco, CDMX con equipos modernos de última generación, clases grupales incluidas (Boxeo, Spinning, Bouncing, Funcional) y acceso ilimitado. Primera clase gratis.",
     "address": {
@@ -137,7 +137,7 @@ export default function AzcapotzalcoPage() {
       "latitude": "19.4569",
       "longitude": "-99.1895"
     },
-    "url": "https://al-gym-247.vercel.app/ubicaciones/azcapotzalco",
+    "url": "https://www.algym247.com/ubicaciones/azcapotzalco",
     "email": "azcapotzalco@algym247.com",
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",

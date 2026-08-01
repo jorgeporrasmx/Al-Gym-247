@@ -32,7 +32,7 @@ export const metadata: Metadata = {
       "Gimnasio premium 24 horas en Nuevo Polanco con tecnología de punta, spa y clases exclusivas. ¡Prueba gratis!",
     type: "website",
     locale: "es_MX",
-    url: "https://al-gym-247.vercel.app/ubicaciones/polanco",
+    url: "https://www.algym247.com/ubicaciones/polanco",
     siteName: "Algym247",
   },
   twitter: {
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
       "Gimnasio premium 24 horas en Nuevo Polanco con tecnología de punta y amenidades de lujo. ¡Prueba gratis!",
   },
   alternates: {
-    canonical: "https://al-gym-247.vercel.app/ubicaciones/polanco",
+    canonical: "https://www.algym247.com/ubicaciones/polanco",
   },
 }
 
@@ -101,19 +101,19 @@ export default function PolancoPage() {
         "@type": "ListItem",
         "position": 1,
         "name": "Inicio",
-        "item": "https://al-gym-247.vercel.app"
+        "item": "https://www.algym247.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Ubicaciones",
-        "item": "https://al-gym-247.vercel.app/#ubicaciones"
+        "item": "https://www.algym247.com/#ubicaciones"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Polanco",
-        "item": "https://al-gym-247.vercel.app/ubicaciones/polanco"
+        "item": "https://www.algym247.com/ubicaciones/polanco"
       }
     ]
   }
@@ -121,12 +121,12 @@ export default function PolancoPage() {
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "GymHealthClub",
-    "@id": "https://al-gym-247.vercel.app/ubicaciones/polanco",
+    "@id": "https://www.algym247.com/ubicaciones/polanco",
     "name": "Algym247 Nuevo Polanco",
     "image": [
-      "https://al-gym-247.vercel.app/pic2.jpg",
-      "https://al-gym-247.vercel.app/3.jpg",
-      "https://al-gym-247.vercel.app/pic1.jpg"
+      "https://www.algym247.com/pic2.jpg",
+      "https://www.algym247.com/3.jpg",
+      "https://www.algym247.com/pic1.jpg"
     ],
     "description": "Gimnasio premium 24 horas en Nuevo Polanco, CDMX. Instalaciones de lujo con equipamiento Technogym, spa, clases exclusivas (Pilates, Boxing, TRX, Hot Yoga) y servicios VIP. Primera clase gratis.",
     "address": {
@@ -142,7 +142,7 @@ export default function PolancoPage() {
       "latitude": "19.4400",
       "longitude": "-99.2019"
     },
-    "url": "https://al-gym-247.vercel.app/ubicaciones/polanco",
+    "url": "https://www.algym247.com/ubicaciones/polanco",
     "telephone": "+52-55-6811-3049",
     "email": "informes@algymnuevopolanco.com.mx",
     "openingHoursSpecification": {

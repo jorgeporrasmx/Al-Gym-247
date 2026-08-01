@@ -8,12 +8,12 @@ export function SchemaOrg() {
     {
       "@context": "https://schema.org",
       "@type": "GymHealthClub",
-      "@id": "https://al-gym-247.vercel.app/ubicaciones/azcapotzalco",
+      "@id": "https://www.algym247.com/ubicaciones/azcapotzalco",
       "name": "Algym247 Azcapotzalco",
       "image": [
-        "https://al-gym-247.vercel.app/logo.png",
-        "https://al-gym-247.vercel.app/pic1.jpg",
-        "https://al-gym-247.vercel.app/pic2.jpg"
+        "https://www.algym247.com/logo.png",
+        "https://www.algym247.com/pic1.jpg",
+        "https://www.algym247.com/pic2.jpg"
       ],
       "description": "Gimnasio 24 horas en Azcapotzalco, CDMX con equipos modernos de última generación, clases grupales incluidas (Boxeo, Spinning, Bouncing, Funcional) y acceso ilimitado. Primera clase gratis.",
       "address": {
@@ -29,7 +29,7 @@ export function SchemaOrg() {
         "latitude": "19.4569",
         "longitude": "-99.1895"
       },
-      "url": "https://al-gym-247.vercel.app/ubicaciones/azcapotzalco",
+      "url": "https://www.algym247.com/ubicaciones/azcapotzalco",
       "telephone": "+1-672-207-2221",
       "email": "azcapotzalco@algym247.com",
       "openingHoursSpecification": {
@@ -118,12 +118,12 @@ export function SchemaOrg() {
     {
       "@context": "https://schema.org",
       "@type": "GymHealthClub",
-      "@id": "https://al-gym-247.vercel.app/ubicaciones/polanco",
+      "@id": "https://www.algym247.com/ubicaciones/polanco",
       "name": "Algym247 Nuevo Polanco",
       "image": [
-        "https://al-gym-247.vercel.app/logo.png",
-        "https://al-gym-247.vercel.app/pic2.jpg",
-        "https://al-gym-247.vercel.app/3.jpg"
+        "https://www.algym247.com/logo.png",
+        "https://www.algym247.com/pic2.jpg",
+        "https://www.algym247.com/3.jpg"
       ],
       "description": "Gimnasio premium 24 horas en Nuevo Polanco, CDMX. Instalaciones de lujo con equipamiento Technogym, spa, clases exclusivas (Pilates, Boxing, TRX, Hot Yoga) y servicios VIP. Primera clase gratis.",
       "address": {
@@ -139,7 +139,7 @@ export function SchemaOrg() {
         "latitude": "19.4400",
         "longitude": "-99.2019"
       },
-      "url": "https://al-gym-247.vercel.app/ubicaciones/polanco",
+      "url": "https://www.algym247.com/ubicaciones/polanco",
       "telephone": "+52-55-6811-3049",
       "email": "informes@algymnuevopolanco.com.mx",
       "openingHoursSpecification": {
@@ -242,10 +242,10 @@ export function SchemaOrg() {
     "@type": "Organization",
     "name": "Algym247",
     "alternateName": "Al Gym 247",
-    "url": "https://al-gym-247.vercel.app",
+    "url": "https://www.algym247.com",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://al-gym-247.vercel.app/logo.png",
+      "url": "https://www.algym247.com/logo.png",
       "width": 250,
       "height": 60
     },
@@ -278,12 +278,12 @@ export function SchemaOrg() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Algym247",
-    "url": "https://al-gym-247.vercel.app",
+    "url": "https://www.algym247.com",
     "potentialAction": {
       "@type": "SearchAction",
       "target": {
         "@type": "EntryPoint",
-        "urlTemplate": "https://al-gym-247.vercel.app/?q={search_term_string}"
+        "urlTemplate": "https://www.algym247.com/?q={search_term_string}"
       },
       "query-input": "required name=search_term_string"
     }

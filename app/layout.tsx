@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://al-gym-247.vercel.app'),
+  metadataBase: new URL('https://www.algym247.com'),
   alternates: {
     canonical: '/',
   },
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     title: "Algym247 - Gimnasio 24/7 en CDMX",
     description:
       "Gimnasio 24 horas en Ciudad de México. Equipos modernos, clases incluidas, acceso ilimitado. Ubicaciones en Azcapotzalco y Nuevo Polanco.",
-    url: "https://al-gym-247.vercel.app",
+    url: "https://www.algym247.com",
     siteName: "Algym247",
     images: [
       {

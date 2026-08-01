@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://al-gym-247.vercel.app'
+  const baseUrl = 'https://www.algym247.com'
 
   // Static pages
   const routes = [

@@ -105,7 +105,7 @@ export const COMPANY_INFO = {
   founded: "2020",
   email: "contacto@algym247.com", // TODO: Verify email
   phone: "+1 672 207 2221",
-  website: "https://al-gym-247.vercel.app",
+  website: "https://www.algym247.com",
   social: {
     facebook: "https://www.facebook.com/algym247", // TODO: Verify URL
     instagram: "https://www.instagram.com/algym247", // TODO: Verify URL
