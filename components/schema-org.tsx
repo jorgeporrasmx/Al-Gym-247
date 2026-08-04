@@ -49,13 +49,6 @@ export function SchemaOrg() {
       "priceRange": "$$",
       "paymentAccepted": "Cash, Credit Card, Debit Card, Mobile Payment",
       "currenciesAccepted": "MXN",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "127",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
       "amenityFeature": [
         {
           "@type": "LocationFeatureSpecification",
@@ -159,13 +152,6 @@ export function SchemaOrg() {
       "priceRange": "$$$",
       "paymentAccepted": "Cash, Credit Card, Debit Card, Mobile Payment, Bank Transfer",
       "currenciesAccepted": "MXN",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "203",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
       "amenityFeature": [
         {
           "@type": "LocationFeatureSpecification",

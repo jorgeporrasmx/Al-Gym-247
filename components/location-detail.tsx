@@ -9,7 +9,6 @@ import {
   Clock,
   Mail,
   Navigation,
-  Star,
   CheckCircle2,
   MessageCircle,
 } from "lucide-react"
@@ -34,11 +33,6 @@ interface LocationDetailProps {
     features: string[]
     images: string[]
     nearbyLandmarks: string[]
-    testimonial: {
-      name: string
-      text: string
-      rating: number
-    }
   }
 }
 
@@ -269,41 +263,6 @@ export function LocationDetail({ location }: LocationDetailProps) {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Testimonial Section */}
-      <section className="py-16 px-4 md:px-8 bg-gray-50">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            {t("locationTestimonialsTitle")}
-          </h2>
-
-          <Card className="bg-white">
-            <CardContent className="p-8 md:p-12">
-              <div className="flex mb-4">
-                {[...Array(location.testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="w-6 h-6 fill-primary text-primary" />
-                ))}
-              </div>
-
-              <blockquote className="text-xl text-gray-700 mb-6 italic">
-                &ldquo;{location.testimonial.text}&rdquo;
-              </blockquote>
-
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                  <span className="text-primary font-bold text-lg">
-                    {location.testimonial.name.charAt(0)}
-                  </span>
-                </div>
-                <div>
-                  <p className="font-semibold text-gray-900">{location.testimonial.name}</p>
-                  <p className="text-sm text-gray-500">Socio de Algym247</p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
         </div>
       </section>
 

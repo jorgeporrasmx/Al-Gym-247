@@ -84,11 +84,6 @@ const locationData = {
     "Acceso directo desde Ejército Nacional",
     "Zona corporativa y residencial premium",
   ],
-  testimonial: {
-    name: "Carlos Mendoza", // TODO: Replace with real testimonial
-    text: "El mejor gimnasio donde he estado. Las instalaciones son de primer nivel, el equipo es nuevo y las clases de boxing son increíbles. Vale cada peso de la membresía.", // TODO: Real testimonial
-    rating: 5,
-  },
 }
 
 export default function PolancoPage() {

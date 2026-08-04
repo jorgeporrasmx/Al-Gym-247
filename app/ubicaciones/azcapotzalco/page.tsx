@@ -79,11 +79,6 @@ const locationData = {
     "Zona comercial con restaurantes y tiendas",
     "Fácil acceso desde varias vías",
   ],
-  testimonial: {
-    name: "María González", // TODO: Replace with real testimonial
-    text: "Llevo 6 meses entrenando en Algym247 Azcapotzalco y me encanta. El equipamiento es excelente y al ser 24 horas puedo entrenar después de mi turno nocturno. ¡100% recomendado!", // TODO: Real testimonial
-    rating: 5,
-  },
 }
 
 export default function AzcapotzalcoPage() {
