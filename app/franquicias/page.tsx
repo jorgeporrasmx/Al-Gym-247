@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: "Abre tu Franquicia Algym247 | Inversión en Fitness 24/7",
   description:
     "Únete al éxito de Algym247. Invierte en una franquicia de gimnasio 24/7 con modelo de negocio probado, soporte completo y excelente retorno de inversión.",
+  alternates: {
+    canonical: "/franquicias",
+  },
   openGraph: {
     title: "Abre tu Franquicia Algym247 | Inversión en Fitness 24/7",
     description:

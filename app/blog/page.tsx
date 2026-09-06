@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   title: "Blog - Fitness, Nutrición y Bienestar | Algym247",
   description:
     "Descubre artículos sobre fitness, nutrición, rutinas de ejercicio y consejos de bienestar. Tu guía completa para un estilo de vida saludable 24/7.",
+  alternates: {
+    canonical: "/blog",
+  },
   openGraph: {
     title: "Blog - Fitness, Nutrición y Bienestar | Algym247",
     description:
