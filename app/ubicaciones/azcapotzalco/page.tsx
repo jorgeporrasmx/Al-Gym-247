@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { WhatsAppFloat } from "@/components/whatsapp-float"
@@ -158,6 +159,25 @@ export default function AzcapotzalcoPage() {
       <Header />
       <main className="flex-1">
         <LocationDetail location={locationData} />
+        <section className="bg-gray-50 px-4 py-14 md:px-8">
+          <div className="mx-auto max-w-5xl">
+            <h2 className="text-3xl font-bold text-gray-900">Guías para elegir dónde entrenar en Azcapotzalco</h2>
+            <p className="mt-3 max-w-3xl text-lg text-gray-600">
+              Compara ubicación, clases, equipo y condiciones antes de tomar una decisión.
+            </p>
+            <div className="mt-7 grid gap-4 md:grid-cols-3">
+              {[
+                ["Cómo elegir un gimnasio cerca de ti", "/guias/gimnasio-en-azcapotzalco-cerca-de-mi"],
+                ["Cómo comparar clases de gimnasio", "/guias/clases-de-gym-azcapotzalco"],
+                ["Checklist para elegir el mejor gimnasio", "/guias/mejor-gimnasio-azcapotzalco"],
+              ].map(([title, href]) => (
+                <Link key={href} href={href} className="rounded-xl border border-gray-200 bg-white p-5 font-semibold text-gray-800 transition hover:border-secondary hover:text-secondary hover:shadow-sm">
+                  {title}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
       </main>
       <Footer />
       <CallFloat />

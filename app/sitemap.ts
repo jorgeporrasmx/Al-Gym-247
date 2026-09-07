@@ -1,4 +1,5 @@
 import { MetadataRoute } from 'next'
+import { guides } from '@/lib/guides'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.algym247.com'
@@ -8,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '',
     '/franquicias',
     '/blog',
+    '/guias',
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
@@ -26,5 +28,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }))
 
-  return [...routes, ...locations]
+  const guidePages = guides.map(({ slug }) => ({
+    url: `${baseUrl}/guias/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
+  }))
+
+  return [...routes, ...locations, ...guidePages]
 }
