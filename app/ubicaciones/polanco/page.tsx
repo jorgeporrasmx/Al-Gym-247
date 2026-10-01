@@ -6,30 +6,23 @@ import { CallFloat } from "@/components/call-float"
 import { LocationDetail } from "@/components/location-detail"
 
 export const metadata: Metadata = {
-  title: "Algym247 Polanco - Gimnasio Premium 24/7 en CDMX | Instalaciones de Lujo",
+  title: "Gimnasio 24/7 en Polanco | Al Gym Algym247",
   description:
-    "Descubre Algym247 en Nuevo Polanco, CDMX. Gimnasio premium 24 horas con tecnología de punta, spa, clases exclusivas y amenidades de lujo. En el corazón de Polanco. ¡Prueba gratis!",
+    "Al Gym Algym247 en Nuevo Polanco: Lago Alberto 442, Local 15. Gimnasio abierto 24/7. Consulta mensualidades y condiciones de acceso por WhatsApp.",
   keywords: [
-    "gimnasio polanco",
-    "gym 24 horas polanco",
-    "gimnasio cdmx polanco",
-    "algym247 polanco",
-    "fitness polanco",
-    "gimnasio premium polanco",
-    "nuevo polanco gym",
-    "gimnasio antara polanco",
-    "gym plaza carso",
-    "gimnasio ejército nacional",
-    "spa gimnasio polanco",
-    "pilates boxing polanco",
+    "gimnasio en Polanco",
+    "gym en Polanco",
+    "gimnasio 24/7 Polanco",
+    "Al Gym Polanco",
+    "Algym Nuevo Polanco",
   ],
   authors: [{ name: "Algym247" }],
   creator: "Algym247",
   publisher: "Algym247",
   openGraph: {
-    title: "Algym247 Polanco - Gimnasio Premium 24/7 en CDMX",
+    title: "Gimnasio 24/7 en Polanco | Al Gym Algym247",
     description:
-      "Gimnasio premium 24 horas en Nuevo Polanco con tecnología de punta, spa y clases exclusivas. ¡Prueba gratis!",
+      "Al Gym Algym247 en Nuevo Polanco: Lago Alberto 442, Local 15. Consulta mensualidades y condiciones de acceso por WhatsApp.",
     type: "website",
     locale: "es_MX",
     url: "https://www.algym247.com/ubicaciones/polanco",
@@ -37,18 +30,20 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Algym247 Polanco - Gimnasio Premium 24/7 en CDMX",
+    title: "Gimnasio 24/7 en Polanco | Al Gym Algym247",
     description:
-      "Gimnasio premium 24 horas en Nuevo Polanco con tecnología de punta y amenidades de lujo. ¡Prueba gratis!",
+      "Al Gym Algym247 en Nuevo Polanco: Lago Alberto 442, Local 15. Consulta mensualidades y condiciones de acceso por WhatsApp.",
   },
   alternates: {
     canonical: "https://www.algym247.com/ubicaciones/polanco",
   },
 }
 
-// TODO: Update with real location data before production (see PLACEHOLDERS-TODO.md)
 const locationData = {
   name: "Algym247 Nuevo Polanco",
+  headline: "Gimnasio 24/7 en Nuevo Polanco",
+  intro:
+    "Al Gym Algym247 está en Lago Alberto 442, Local 15. Entrena a cualquier hora, todos los días; consulta por WhatsApp las mensualidades y condiciones de acceso.",
   address: "Lago Alberto 442-Local 15, Anáhuac 1 Secc, Miguel Hidalgo, 11320 Ciudad de México, CDMX",
   neighborhood: "Anáhuac 1 Secc",
   phone: "+52 55 6811 3049",
@@ -115,40 +110,24 @@ export default function PolancoPage() {
 
   const schemaData = {
     "@context": "https://schema.org",
-    "@type": "GymHealthClub",
-    "@id": "https://www.algym247.com/ubicaciones/polanco",
+    "@type": "ExerciseGym",
+    "@id": "https://www.algym247.com/ubicaciones/polanco#exercise-gym",
     "name": "Algym247 Nuevo Polanco",
-    "image": [
-      "https://www.algym247.com/pic2.jpg",
-      "https://www.algym247.com/3.jpg",
-      "https://www.algym247.com/pic1.jpg"
-    ],
-    "description": "Gimnasio premium 24 horas en Nuevo Polanco, CDMX. Instalaciones de lujo con equipamiento Technogym, spa, clases exclusivas (Pilates, Boxing, TRX, Hot Yoga) y servicios VIP. Primera clase gratis.",
+    "url": "https://www.algym247.com/ubicaciones/polanco",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Lago Alberto 442-Local 15",
+      "streetAddress": "Lago Alberto 442, Local 15",
       "addressLocality": "Anáhuac 1 Secc, Miguel Hidalgo",
-      "addressRegion": "CDMX",
+      "addressRegion": "Ciudad de México",
       "postalCode": "11320",
       "addressCountry": "MX"
     },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": "19.4400",
-      "longitude": "-99.2019"
-    },
-    "url": "https://www.algym247.com/ubicaciones/polanco",
-    "telephone": "+52-55-6811-3049",
-    "email": "informes@algymnuevopolanco.com.mx",
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
       "opens": "00:00",
       "closes": "23:59"
-    },
-    "priceRange": "$$$",
-    "paymentAccepted": "Cash, Credit Card, Debit Card, Mobile Payment, Bank Transfer",
-    "currenciesAccepted": "MXN"
+    }
   }
 
   return (

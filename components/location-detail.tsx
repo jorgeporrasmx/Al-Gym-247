@@ -12,12 +12,14 @@ import {
   CheckCircle2,
   MessageCircle,
 } from "lucide-react"
-import { getWhatsAppURL, getPhoneURL, CONTACTS } from "@/config/contacts"
+import { getWhatsAppURL, CONTACTS } from "@/config/contacts"
 import { useLanguage } from "@/contexts/language-context"
 
 interface LocationDetailProps {
   location: {
     name: string
+    headline: string
+    intro: string
     address: string
     neighborhood: string
     phone: string
@@ -71,8 +73,12 @@ export function LocationDetail({ location }: LocationDetailProps) {
               </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                {location.name}
+                {location.headline}
               </h1>
+
+              <p className="max-w-2xl text-lg leading-relaxed text-gray-200">
+                {location.intro}
+              </p>
 
               <div className="space-y-3 text-gray-300">
                 <div className="flex items-start gap-3">
