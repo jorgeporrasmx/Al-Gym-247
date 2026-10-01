@@ -118,15 +118,15 @@ export default function GuidePage({ params }: GuidePageProps) {
             </div>
 
             <aside className="mt-16 rounded-2xl bg-gray-950 p-7 text-white md:p-10">
-              <h2 className="text-2xl font-bold md:text-3xl">Conoce Algym247 Azcapotzalco</h2>
+              <h2 className="text-2xl font-bold md:text-3xl">Gimnasio 24/7 en Azcapotzalco</h2>
               <p className="mt-3 max-w-2xl text-white/75">
-                Revisa ubicación, instalaciones y datos de contacto vigentes antes de elegir tu gimnasio.
+                Encuentra la dirección de Al Gym Azcapotzalco y consulta las condiciones de acceso.
               </p>
               <Link
                 href="/ubicaciones/azcapotzalco"
                 className="mt-6 inline-flex items-center gap-2 rounded-lg bg-secondary px-6 py-3 font-bold text-white transition hover:bg-secondary/90"
               >
-                Ver ubicación <ArrowRight className="h-5 w-5" aria-hidden="true" />
+                Ver ubicación y acceso 24/7 <ArrowRight className="h-5 w-5" aria-hidden="true" />
               </Link>
             </aside>
 

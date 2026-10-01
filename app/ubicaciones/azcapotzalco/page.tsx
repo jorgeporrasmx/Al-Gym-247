@@ -7,30 +7,24 @@ import { CallFloat } from "@/components/call-float"
 import { LocationDetail } from "@/components/location-detail"
 
 export const metadata: Metadata = {
-  title: "Algym247 Azcapotzalco - Gimnasio 24/7 en CDMX | Equipamiento Completo",
+  title: "Gimnasio 24/7 en Azcapotzalco | Al Gym Algym247",
   description:
-    "Visita Algym247 en Av. Azcapotzalco 527, Centro de Azcapotzalco. Gimnasio 24 horas con clases de Boxeo, Spinning, Bouncing, Funcional y más. A 5 min del Metro Camarones. ¡Primera clase gratis!",
+    "Gimnasio 24/7 en Azcapotzalco: Al Gym está en Av. Azcapotzalco 527, locales 15–17. Pregunta por mensualidades y acceso por WhatsApp.",
   keywords: [
-    "gimnasio azcapotzalco",
-    "gym 24 horas azcapotzalco",
-    "gimnasio cdmx azcapotzalco",
-    "algym247 azcapotzalco",
-    "fitness azcapotzalco",
-    "entrenamiento azcapotzalco",
-    "gimnasio cerca metro camarones",
-    "gym parque tezozomoc",
-    "clases grupales azcapotzalco",
-    "boxeo spinning bouncing azcapotzalco",
-    "clases de boxeo azcapotzalco",
-    "gimnasio av azcapotzalco 527",
+    "gimnasio Azcapotzalco",
+    "gym Azcapotzalco",
+    "gym Azcapo",
+    "gimnasio 24/7 Azcapotzalco",
+    "Al Gym Azcapotzalco",
+    "Algym 24/7 Azcapotzalco",
   ],
   authors: [{ name: "Algym247" }],
   creator: "Algym247",
   publisher: "Algym247",
   openGraph: {
-    title: "Algym247 Azcapotzalco - Gimnasio 24/7 en CDMX",
+    title: "Gimnasio 24/7 en Azcapotzalco | Al Gym Algym247",
     description:
-      "Gimnasio 24 horas en Av. Azcapotzalco 527 con clases de Boxeo, Spinning, Bouncing y Funcional. A 5 min del Metro Camarones. ¡Primera clase gratis!",
+      "Al Gym está en Av. Azcapotzalco 527, locales 15–17. Consulta mensualidades y condiciones de acceso por WhatsApp.",
     type: "website",
     locale: "es_MX",
     url: "https://www.algym247.com/ubicaciones/azcapotzalco",
@@ -38,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Algym247 Azcapotzalco - Gimnasio 24/7 en CDMX",
+    title: "Gimnasio 24/7 en Azcapotzalco | Al Gym Algym247",
     description:
-      "Gimnasio 24 horas con clases de Boxeo, Spinning, Bouncing y Funcional. A 5 min del Metro Camarones. ¡Primera clase gratis!",
+      "Al Gym está en Av. Azcapotzalco 527, locales 15–17. Consulta mensualidades y condiciones de acceso por WhatsApp.",
   },
   alternates: {
     canonical: "https://www.algym247.com/ubicaciones/azcapotzalco",
@@ -49,6 +43,9 @@ export const metadata: Metadata = {
 
 const locationData = {
   name: "Algym247 Azcapotzalco",
+  headline: "Gimnasio 24/7 en Azcapotzalco",
+  intro:
+    "Al Gym Algym247 está en Av. Azcapotzalco 527, locales 15–17. Entrena 24/7 y escríbenos por WhatsApp para consultar mensualidades y condiciones de acceso.",
   address: "Av. Azcapotzalco 527. Local 15 al 17, Centro de Azcapotzalco, 02000 CDMX",
   neighborhood: "Azcapotzalco",
   phone: "", // No phone number for this location
@@ -111,39 +108,24 @@ export default function AzcapotzalcoPage() {
 
   const schemaData = {
     "@context": "https://schema.org",
-    "@type": "GymHealthClub",
-    "@id": "https://www.algym247.com/ubicaciones/azcapotzalco",
+    "@type": "ExerciseGym",
+    "@id": "https://www.algym247.com/ubicaciones/azcapotzalco#exercise-gym",
     "name": "Algym247 Azcapotzalco",
-    "image": [
-      "https://www.algym247.com/pic1.jpg",
-      "https://www.algym247.com/pic2.jpg",
-      "https://www.algym247.com/pic3.jpg"
-    ],
-    "description": "Gimnasio 24 horas en Azcapotzalco, CDMX con equipos modernos de última generación, clases grupales incluidas (Boxeo, Spinning, Bouncing, Funcional) y acceso ilimitado. Primera clase gratis.",
+    "url": "https://www.algym247.com/ubicaciones/azcapotzalco",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Av. Azcapotzalco 527. Local 15 al 17",
+      "streetAddress": "Av. Azcapotzalco 527, locales 15 al 17",
       "addressLocality": "Centro de Azcapotzalco",
-      "addressRegion": "CDMX",
+      "addressRegion": "Ciudad de México",
       "postalCode": "02000",
       "addressCountry": "MX"
     },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": "19.4569",
-      "longitude": "-99.1895"
-    },
-    "url": "https://www.algym247.com/ubicaciones/azcapotzalco",
-    "email": "azcapotzalco@algym247.com",
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
       "opens": "00:00",
       "closes": "23:59"
-    },
-    "priceRange": "$$",
-    "paymentAccepted": "Cash, Credit Card, Debit Card, Mobile Payment",
-    "currenciesAccepted": "MXN"
+    }
   }
 
   return (
