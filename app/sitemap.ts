@@ -3,6 +3,7 @@ import { guides } from '@/lib/guides'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.algym247.com'
+  const locationContentLastModified = new Date('2026-10-05T00:00:00.000Z')
 
   // Static pages
   const routes = [
@@ -12,7 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/guias',
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    ...(route === '' ? { lastModified: locationContentLastModified } : {}),
     changeFrequency: 'weekly' as const,
     priority: route === '' ? 1 : 0.8,
   }))
@@ -23,14 +24,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/ubicaciones/polanco',
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: locationContentLastModified,
     changeFrequency: 'monthly' as const,
     priority: 0.9,
   }))
 
   const guidePages = guides.map(({ slug }) => ({
     url: `${baseUrl}/guias/${slug}`,
-    lastModified: new Date(),
     changeFrequency: 'monthly' as const,
     priority: 0.8,
   }))

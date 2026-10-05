@@ -7,9 +7,9 @@ import { CallFloat } from "@/components/call-float"
 import { LocationDetail } from "@/components/location-detail"
 
 export const metadata: Metadata = {
-  title: "Gimnasio 24/7 en Azcapotzalco | Al Gym Algym247",
+  title: "Al Gym 24/7 en Azcapotzalco | Gimnasio CDMX",
   description:
-    "Gimnasio 24/7 en Azcapotzalco: Al Gym está en Av. Azcapotzalco 527, locales 15–17. Pregunta por mensualidades y acceso por WhatsApp.",
+    "Al Gym 24/7 en Azcapotzalco, en Av. Azcapotzalco 527, locales 15–17. Revisa servicios, horario y cómo llegar.",
   keywords: [
     "gimnasio Azcapotzalco",
     "gym Azcapotzalco",
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
   creator: "Algym247",
   publisher: "Algym247",
   openGraph: {
-    title: "Gimnasio 24/7 en Azcapotzalco | Al Gym Algym247",
+    title: "Al Gym 24/7 en Azcapotzalco | Gimnasio CDMX",
     description:
-      "Al Gym está en Av. Azcapotzalco 527, locales 15–17. Consulta mensualidades y condiciones de acceso por WhatsApp.",
+      "Al Gym 24/7 en Azcapotzalco, en Av. Azcapotzalco 527, locales 15–17. Revisa servicios, horario y cómo llegar.",
     type: "website",
     locale: "es_MX",
     url: "https://www.algym247.com/ubicaciones/azcapotzalco",
@@ -32,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Gimnasio 24/7 en Azcapotzalco | Al Gym Algym247",
+    title: "Al Gym 24/7 en Azcapotzalco | Gimnasio CDMX",
     description:
-      "Al Gym está en Av. Azcapotzalco 527, locales 15–17. Consulta mensualidades y condiciones de acceso por WhatsApp.",
+      "Al Gym 24/7 en Azcapotzalco, en Av. Azcapotzalco 527, locales 15–17. Revisa servicios, horario y cómo llegar.",
   },
   alternates: {
     canonical: "https://www.algym247.com/ubicaciones/azcapotzalco",

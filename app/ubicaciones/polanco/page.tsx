@@ -6,9 +6,9 @@ import { CallFloat } from "@/components/call-float"
 import { LocationDetail } from "@/components/location-detail"
 
 export const metadata: Metadata = {
-  title: "Gimnasio 24/7 en Polanco | Al Gym Algym247",
+  title: "Al Gym 24/7 en Nuevo Polanco | Gimnasio CDMX",
   description:
-    "Al Gym Algym247 en Nuevo Polanco: Lago Alberto 442, Local 15. Gimnasio abierto 24/7. Consulta mensualidades y condiciones de acceso por WhatsApp.",
+    "Al Gym en Nuevo Polanco, Lago Alberto 442, Local 15. Gimnasio 24/7; revisa servicios, horario y cómo llegar.",
   keywords: [
     "gimnasio en Polanco",
     "gym en Polanco",
@@ -20,9 +20,9 @@ export const metadata: Metadata = {
   creator: "Algym247",
   publisher: "Algym247",
   openGraph: {
-    title: "Gimnasio 24/7 en Polanco | Al Gym Algym247",
+    title: "Al Gym 24/7 en Nuevo Polanco | Gimnasio CDMX",
     description:
-      "Al Gym Algym247 en Nuevo Polanco: Lago Alberto 442, Local 15. Consulta mensualidades y condiciones de acceso por WhatsApp.",
+      "Al Gym en Nuevo Polanco, Lago Alberto 442, Local 15. Gimnasio 24/7; revisa servicios, horario y cómo llegar.",
     type: "website",
     locale: "es_MX",
     url: "https://www.algym247.com/ubicaciones/polanco",
@@ -30,9 +30,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Gimnasio 24/7 en Polanco | Al Gym Algym247",
+    title: "Al Gym 24/7 en Nuevo Polanco | Gimnasio CDMX",
     description:
-      "Al Gym Algym247 en Nuevo Polanco: Lago Alberto 442, Local 15. Consulta mensualidades y condiciones de acceso por WhatsApp.",
+      "Al Gym en Nuevo Polanco, Lago Alberto 442, Local 15. Gimnasio 24/7; revisa servicios, horario y cómo llegar.",
   },
   alternates: {
     canonical: "https://www.algym247.com/ubicaciones/polanco",
