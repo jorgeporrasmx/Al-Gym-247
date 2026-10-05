@@ -13,6 +13,7 @@ export function LocationsSection() {
 
   const locations = [
     {
+      slug: "azcapotzalco",
       name: t("location1Name"),
       address: t("location1Address"),
       phone: "", // No phone for Azcapotzalco
@@ -20,6 +21,7 @@ export function LocationsSection() {
       mapUrl: "https://maps.google.com/?q=Azcapotzalco+CDMX",
     },
     {
+      slug: "polanco",
       name: t("location2Name"),
       address: t("location2Address"),
       phone: t("location2Phone"),
@@ -77,7 +79,7 @@ export function LocationsSection() {
 
                     <div className="flex gap-2 mt-4">
                       <Link
-                        href={`/ubicaciones/${index === 0 ? 'azcapotzalco' : 'polanco'}`}
+                        href={`/ubicaciones/${location.slug}`}
                         className="flex-1"
                       >
                         <Button
@@ -85,7 +87,9 @@ export function LocationsSection() {
                           size="sm"
                           className="w-full bg-primary hover:bg-primary/90 transition-all duration-300 hover:scale-105"
                         >
-                          Ver detalles
+                          {language === "es"
+                            ? `Ver gimnasio 24/7 en ${location.name}`
+                            : `View 24/7 gym in ${location.name}`}
                           <ArrowRight className="w-4 h-4 ml-2" />
                         </Button>
                       </Link>
