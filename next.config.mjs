@@ -15,6 +15,16 @@ const nextConfig = {
   compress: true,
   poweredByHeader: false,
   reactStrictMode: true,
+  async redirects() {
+    return [
+      { source: '/index', destination: '/', permanent: true },
+      {
+        source: '/guias/gym-cerca-metro-camarones-parque-tezozomoc',
+        destination: '/ubicaciones/azcapotzalco',
+        permanent: true,
+      },
+    ]
+  },
   async headers() {
     return [
       {

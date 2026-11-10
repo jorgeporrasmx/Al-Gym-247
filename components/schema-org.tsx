@@ -264,15 +264,7 @@ export function SchemaOrg() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Algym247",
-    "url": "https://www.algym247.com",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "https://www.algym247.com/?q={search_term_string}"
-      },
-      "query-input": "required name=search_term_string"
-    }
+    "url": "https://www.algym247.com"
   }
 
   return (
