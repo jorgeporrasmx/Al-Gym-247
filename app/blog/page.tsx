@@ -1,4 +1,6 @@
 import type { Metadata } from "next"
+import Link from "next/link"
+import { guides } from "@/lib/guides"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { WhatsAppFloat } from "@/components/whatsapp-float"
@@ -50,6 +52,19 @@ export default async function BlogPage() {
           <div className="max-w-7xl mx-auto">
             <BlogList posts={posts} categories={categories} />
           </div>
+        </section>
+        <section className="mx-auto max-w-7xl px-4 pb-12" aria-labelledby="blog-guias">
+          <h2 id="blog-guias" className="mb-4 text-2xl font-bold">Guías para entrenar en Azcapotzalco</h2>
+          <ul className="space-y-4">
+            {guides.map((guide) => (
+              <li key={guide.slug}>
+                <Link className="font-semibold text-primary underline" href={`/guias/${guide.slug}`}>
+                  {guide.title}
+                </Link>
+                <p className="text-muted-foreground">{guide.description}</p>
+              </li>
+            ))}
+          </ul>
         </section>
       </main>
       <Footer />
