@@ -7,6 +7,7 @@ import { GoogleTagManager } from "@/components/google-tag-manager"
 import { GoogleAdsTag } from "@/components/google-ads-tag"
 import { SchemaOrg } from "@/components/schema-org"
 import { MetricoolPixel } from "@/components/metricool-pixel"
+import { LeadAttributionCapture } from "@/components/lead-attribution"
 import { dinPro } from "./fonts"
 import "./globals.css"
 
@@ -91,6 +92,9 @@ export default function RootLayout({
       </head>
       <body className={`${dinPro.variable} font-sans antialiased`}>
         <GoogleTagManager />
+        <Suspense fallback={null}>
+          <LeadAttributionCapture />
+        </Suspense>
         <LanguageProvider>
           <Suspense fallback={<div>Loading...</div>}>
             {children}

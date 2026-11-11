@@ -1,3 +1,5 @@
+import { buildInterestFormURL, captureBrowserAttribution } from '@/lib/lead-attribution'
+
 /**
  * Configuración centralizada de contactos de Algym247
  * Este archivo contiene toda la información de contacto para mantener consistencia
@@ -43,6 +45,10 @@ export const CONTACTS = {
 }
 
 // Helpers para generar URLs
+// Called by click handlers, preserving the original visit across internal navigation.
+export const getInterestFormURL = () =>
+  buildInterestFormURL(CONTACTS.forms.interest, captureBrowserAttribution())
+
 export const getWhatsAppURL = (message?: string, language: 'es' | 'en' = 'es') => {
   const msg = message || CONTACTS.whatsapp.defaultMessage[language]
   return `https://api.whatsapp.com/send/?phone=${CONTACTS.whatsapp.number}&text=${encodeURIComponent(msg)}&type=phone_number&app_absent=0`
