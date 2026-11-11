@@ -6,7 +6,7 @@ import { LanguageToggle } from "@/components/language-toggle"
 import { Navigation } from "@/components/navigation"
 import { useLanguage } from "@/contexts/language-context"
 import { Phone } from "lucide-react"
-import { CONTACTS, getWhatsAppURL, getPhoneURL } from "@/config/contacts"
+import { getInterestFormURL, getWhatsAppURL, getPhoneURL } from "@/config/contacts"
 
 export function Header() {
   const { t, language } = useLanguage()
@@ -65,7 +65,7 @@ export function Header() {
           {/* Botón Me Interesa - Hidden on small mobile */}
           <Button
             className="hidden sm:flex bg-primary hover:bg-primary/90 text-white px-3 py-1.5 md:px-4 md:py-2 lg:px-5 lg:py-2.5 rounded-lg font-bold transition-colors duration-200 text-xs md:text-sm lg:text-base"
-            onClick={() => window.open(CONTACTS.forms.interest, "_blank")}
+            onClick={() => window.open(getInterestFormURL(), "_blank")}
           >
             {t("interested")}
           </Button>

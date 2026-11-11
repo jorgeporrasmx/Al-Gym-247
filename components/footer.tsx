@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Facebook, Instagram, Linkedin, Youtube, MessageCircle } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
 import { PrivacyPopup } from "@/components/privacy-popup"
-import { CONTACTS, getWhatsAppURL } from "@/config/contacts"
+import { CONTACTS, getInterestFormURL, getWhatsAppURL } from "@/config/contacts"
 
 export function Footer() {
   const { t, language } = useLanguage()
@@ -80,7 +80,7 @@ export function Footer() {
 
         <div className="mb-8">
           <Button
-            onClick={() => window.open(CONTACTS.forms.interest, "_blank")}
+            onClick={() => window.open(getInterestFormURL(), "_blank")}
             className="bg-secondary hover:bg-secondary/90 text-white px-8 py-3 rounded-lg font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg"
           >
             {t("interested")}
