@@ -1,13 +1,13 @@
 "use client"
 
 import { useLanguage } from "@/contexts/language-context"
-import { getWhatsAppURL } from "@/config/contacts"
+import { openWhatsApp } from "@/config/contacts"
 
 export function WhatsAppFloat() {
   const { language } = useLanguage()
 
   const handleWhatsAppClick = () => {
-    window.open(getWhatsAppURL(undefined, language), "_blank")
+    void openWhatsApp(undefined, language)
   }
 
   return (

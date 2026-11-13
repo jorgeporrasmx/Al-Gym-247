@@ -4,7 +4,7 @@ import type React from "react"
 import { Button } from "@/components/ui/button"
 import { Star } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
-import { getInterestFormURL, getWhatsAppURL } from "@/config/contacts"
+import { getInterestFormURL, openWhatsApp } from "@/config/contacts"
 
 export function HeroSection() {
   const { t, language } = useLanguage()
@@ -38,7 +38,7 @@ export function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-3 animate-fade-in-up animation-delay-400">
               <Button
                 className="bg-green-600 hover:bg-green-700 text-white px-4 md:px-6 py-2 md:py-3 rounded-lg flex items-center justify-center gap-2 font-bold transition-colors duration-200 text-sm md:text-base"
-                onClick={() => window.open(getWhatsAppURL(undefined, language), "_blank")}
+                onClick={() => void openWhatsApp(undefined, language)}
               >
                 <svg
                   className="w-4 h-4 md:w-5 md:h-5"
