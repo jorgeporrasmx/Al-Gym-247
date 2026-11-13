@@ -1,4 +1,5 @@
 import { buildInterestFormURL, captureBrowserAttribution } from '@/lib/lead-attribution'
+import { directWhatsAppURL } from '@/lib/whatsapp-attribution'
 
 /**
  * Configuración centralizada de contactos de Algym247
@@ -51,7 +52,33 @@ export const getInterestFormURL = () =>
 
 export const getWhatsAppURL = (message?: string, language: 'es' | 'en' = 'es') => {
   const msg = message || CONTACTS.whatsapp.defaultMessage[language]
-  return `https://api.whatsapp.com/send/?phone=${CONTACTS.whatsapp.number}&text=${encodeURIComponent(msg)}&type=phone_number&app_absent=0`
+  return directWhatsAppURL(msg)
+}
+
+// Open the tab synchronously to retain the user's click gesture on mobile browsers.
+export const openWhatsApp = async (message?: string, language: 'es' | 'en' = 'es') => {
+  const popup = window.open('about:blank', '_blank')
+  if (popup) popup.opener = null
+  let url = getWhatsAppURL(message, language)
+  try {
+    const attribution = captureBrowserAttribution()
+    const response = await fetch('/api/whatsapp', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' }, cache: 'no-store',
+      signal: AbortSignal.timeout(5000),
+      body: JSON.stringify({ message: message || CONTACTS.whatsapp.defaultMessage[language], attribution }),
+    })
+    if (!response.ok) throw new Error('reference_unavailable')
+    const data = await response.json()
+    const destination = new URL(data.url)
+    if (destination.origin !== 'https://api.whatsapp.com' || destination.pathname !== '/send/' ||
+        destination.searchParams.get('phone') !== CONTACTS.whatsapp.number) throw new Error('invalid_destination')
+    url = destination.toString()
+  } catch {
+    // Contact remains available during an outage; never manufacture attribution.
+    console.warn('whatsapp_reference_unavailable')
+  }
+  if (popup) { if (!popup.closed) popup.location.replace(url) }
+  else window.location.assign(url)
 }
 
 export const getPhoneURL = () => {

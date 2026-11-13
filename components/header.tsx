@@ -6,7 +6,7 @@ import { LanguageToggle } from "@/components/language-toggle"
 import { Navigation } from "@/components/navigation"
 import { useLanguage } from "@/contexts/language-context"
 import { Phone } from "lucide-react"
-import { getInterestFormURL, getWhatsAppURL, getPhoneURL } from "@/config/contacts"
+import { getInterestFormURL, openWhatsApp, getPhoneURL } from "@/config/contacts"
 
 export function Header() {
   const { t, language } = useLanguage()
@@ -49,7 +49,7 @@ export function Header() {
           {/* Botón de WhatsApp */}
           <Button
             className="bg-green-600 hover:bg-green-700 text-white px-3 py-1.5 md:px-4 md:py-2 lg:px-5 lg:py-2.5 rounded-lg flex items-center gap-1.5 md:gap-2 font-bold transition-colors duration-200 text-xs md:text-sm lg:text-base"
-            onClick={() => window.open(getWhatsAppURL(undefined, language), "_blank")}
+            onClick={() => void openWhatsApp(undefined, language)}
             aria-label="Contactar por WhatsApp"
           >
             <svg

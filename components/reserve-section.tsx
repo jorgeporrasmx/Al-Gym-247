@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { useLanguage } from "@/contexts/language-context"
-import { getWhatsAppURL } from "@/config/contacts"
+import { openWhatsApp } from "@/config/contacts"
 
 export function ReserveSection() {
   const { t, language } = useLanguage()
@@ -42,7 +42,7 @@ export function ReserveSection() {
                   const customMessage = language === "es"
                     ? "Hola, me interesa reservar mi lugar en Algym247"
                     : "Hello, I'm interested in reserving my spot at Algym247"
-                  window.open(getWhatsAppURL(customMessage, language), "_blank")
+                  void openWhatsApp(customMessage, language)
                 }}
               >
                 <svg

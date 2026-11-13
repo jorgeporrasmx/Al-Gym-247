@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Facebook, Instagram, Linkedin, Youtube, MessageCircle } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
 import { PrivacyPopup } from "@/components/privacy-popup"
-import { CONTACTS, getInterestFormURL, getWhatsAppURL } from "@/config/contacts"
+import { CONTACTS, getInterestFormURL, openWhatsApp } from "@/config/contacts"
 
 export function Footer() {
   const { t, language } = useLanguage()
@@ -70,7 +70,7 @@ export function Footer() {
             </svg>
           </a>
           <button
-            onClick={() => window.open(getWhatsAppURL(undefined, language), "_blank")}
+            onClick={() => void openWhatsApp(undefined, language)}
             className="text-gray-400 hover:text-green-600 transition-all duration-300 hover:scale-110"
             aria-label="WhatsApp"
           >
