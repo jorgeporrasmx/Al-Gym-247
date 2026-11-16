@@ -54,12 +54,22 @@ async function main() {
     assert.equal(columns.text_mm38d6nd, undefined); assert.equal(columns.text_mkzbc1ta, undefined)
     assert.equal(JSON.parse(columns.long_text_mm6xae20.text).contact_channel, 'WhatsApp')
     assert.equal(backend.persistInbound(database, { ...event }).duplicate, true)
+    const existing = { id: 'qa_contract_mock_only', state: 'active', board: { id: '4052125777' }, column_values: [{ id: 'tel_fono', value: JSON.stringify({ phone: event.from }) }] }
+    const searchedBoards: string[] = []
     const duplicate = await backend.syncLeadToMonday(database, event.from, { force: true, mode: 'create_only',
-      mondayClient: async (query: string) => {
-        assert(query.includes('exclude_nonactive'))
-        return { items: [{ id: 'qa_contract_mock_only', state: 'active', board: { id: '4052125777' }, column_values: [{ id: 'tel_fono', value: JSON.stringify({ phone: event.from }) }] }] }
+      mondayClient: async (query: string, variables: any) => {
+        if (query.includes('exclude_nonactive')) {
+          assert.deepEqual(variables.ids, [existing.id])
+          return { items: [existing] }
+        }
+        assert(query.includes('items_page_by_column_values'), 'Retry must perform reads only')
+        assert(['4052125777', '9068669404'].includes(variables.boardId), 'Search must stay within Azcapotzalco')
+        searchedBoards.push(variables.boardId)
+        return { items_page_by_column_values: { items: variables.boardId === existing.board.id ? [existing] : [], cursor: null } }
       } })
+    assert.equal(duplicate.ok, true)
     assert.equal(duplicate.operation, 'noop_existing_item')
+    assert.deepEqual(searchedBoards.sort(), ['4052125777', '9068669404'])
     assert.equal(records.filter(row => row.query.includes('create_item')).length, 1)
     console.log('PASS: web → local HTTP → opaque reference → WhatsApp payload → SQLite → simulated Monday; retry creates zero additional items. External writes: 0. Ads events: 0. Messages sent: 0.')
   } finally {

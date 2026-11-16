@@ -27,6 +27,12 @@ el repositorio privado `jorgeporrasmx/algym-whatsapp-attribution-review`, archiv
   `node --require <backend>/tests/no-external.cjs --import tsx scripts/test-whatsapp-contract.ts`.
   Usa HTTP local, SQLite en memoria y Monday simulado, sin conversiones ni mensajes externos.
 
+Revalidación del 16-nov-2026: contrato aprobado contra el backend mínimo `c1608f7`.
+El simulador del reintento se actualizó para responder tanto la lectura del vínculo guardado
+como las búsquedas completas en Ventas y Contratos de Azcapotzalco. Cualquier otra consulta
+o escritura en ese reintento falla la prueba. Se conservan origen Google Ads y GCLID en la
+escritura simulada inicial; el reintento no genera una segunda alta. Red externa bloqueada.
+
 ## Publicación pendiente
 
 Juan debe integrar y revisar el backend completo, disponer del respaldo recuperable y configurar
