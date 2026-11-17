@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { MapPin, Phone, Clock, ArrowRight } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
-import { getWhatsAppURL } from "@/config/contacts"
+import { openWhatsApp } from "@/config/contacts"
 
 export function LocationsSection() {
   const { t, language } = useLanguage()
@@ -110,7 +110,7 @@ export function LocationsSection() {
                 const customMessage = language === "es"
                   ? "¡Hola! Me interesa conocer más sobre las ubicaciones de Algym247 y sus servicios."
                   : "Hello! I'm interested in learning more about Algym247 locations and services."
-                window.open(getWhatsAppURL(customMessage, language), "_blank")
+                void openWhatsApp(customMessage, language)
               }}
             >
               Contacto

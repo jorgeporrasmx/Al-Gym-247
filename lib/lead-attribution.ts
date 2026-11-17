@@ -35,7 +35,8 @@ export function resolveAttribution(
   if (parameters.gclid || parameters.gbraid || parameters.wbraid ||
       (source === 'google' && /^(cpc|ppc|paid|paidsearch|paid_search)$/.test(medium || ''))) {
     acquisition = 'Google Ads'
-  } else if (source === 'google') acquisition = 'Google'
+  } else if (source === 'google' || /^(google_maps|maps|gmb|google_business_profile)$/.test(source || '') ||
+      (source === 'google' && /^(maps|gmb)$/.test(medium || ''))) acquisition = 'Google'
 
   // A missing referrer is unknown/direct traffic, not evidence of a Google visit.
   if (!Object.keys(parameters).length && referrer) {

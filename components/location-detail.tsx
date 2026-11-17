@@ -12,7 +12,7 @@ import {
   CheckCircle2,
   MessageCircle,
 } from "lucide-react"
-import { getWhatsAppURL, CONTACTS } from "@/config/contacts"
+import { openWhatsApp, CONTACTS } from "@/config/contacts"
 import { useLanguage } from "@/contexts/language-context"
 
 interface LocationDetailProps {
@@ -45,7 +45,7 @@ export function LocationDetail({ location }: LocationDetailProps) {
     const message = language === "es"
       ? `¡Hola! Me interesa conocer más sobre el gimnasio Algym247 en ${location.neighborhood}. ¿Podrían darme más información?`
       : `Hello! I'm interested in learning more about Algym247 gym in ${location.neighborhood}. Could you provide more information?`
-    window.open(getWhatsAppURL(message, language), "_blank")
+    void openWhatsApp(message, language)
   }
 
   const handleCallClick = () => {
